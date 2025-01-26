@@ -1,6 +1,6 @@
-# Babet's Site
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7b91181-c4f0-4630-94af-6f88af983aaa/deploy-status)](https://app.netlify.com/sites/resonant-llama-f9e029/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6e83fd88-5ffe-4808-9689-c0f3b100bfe3/deploy-status)](https://app.netlify.com/sites/hextra-starter-template/deploys)
+# Babet's Site
 
 This website was created to store and share my projects.
 
