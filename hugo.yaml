@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: KIN 325R
+title: Babet's Site
 
 # import hextra as module
 module:
@@ -18,15 +18,12 @@ markup:
 
 menu:
   main:
-    - name: Contact ↗
-      url: "https://adrienbabet.com/contact/"
-      weight: 1
     - name: Search
-      weight: 2
+      weight: 1
       params:
         type: search
     - name: GitHub
-      weight: 3
+      weight: 2
       url: "https://github.com/babetCode/kin325r.adrienbabet.com"
       params:
         icon: github
@@ -48,4 +45,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/babetCode/kin325r.adrienbabet.com/edit/main/content"
+    base: "https://github.com/babetCode/adrienbabet.com/edit/main/content"

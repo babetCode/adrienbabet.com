@@ -1,34 +1,65 @@
 ---
-toc: false
-cascade:
-  type: docs
-breadcrumbs: true
+title: Home
+layout: hextra-home
 ---
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  KIN 325R: Biomechanics
+  Hello, I'm Adrien Babet
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Spring 2025
+  Snowboarder and exercise science student,&nbsp;<br class="sm:hx-block hx-hidden">interested in human movement and computer programming.
 {{< /hextra/hero-subtitle >}}
 </div>
 
-{{< hextra/hero-badge link="/week2" >}}
-  Week 2
-{{< /hextra/hero-badge >}}
+{{< carousel images="/images/cliff.jpg,/images/hero-snow.jpg" >}}
 
-{{< details-html title="Syllabus" closed="true" >}}
-{{< tallpdf path="/pdfs/syllabus.pdf" >}}
-{{< /details-html >}}
+<div class="hx-mt-6"></div>
+{{< hextra/feature-grid >}}
+  <!-- {{< hextra/feature-card
+    title="Snowboarding"
+    subtitle="My thoughts on snowboarding technique, physics, and equipment."
+    link="example.com"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="images/double.jpg"
+    imageClass="hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(194,97,254,0.15),hsla(0,0%,100%,0));"
+  >}} -->
+  {{< hextra/feature-card
+    title="Projects"
+    subtitle="My Collection of Curiosity"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="images/speaking.jpg"
+    imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(59, 197, 221, 0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
+    title="Biomechanics"
+    subtitle="My KIN 325R Course Material"
+    icon="external-link"
+    link="https://kin325r.adrienbabet.com/"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
+    image="images/OpenSimRunner.png"
+    imageClass="hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
+    title="Anatomy & Physiology"
+    subtitle="My BIOH 201 Course Material"
+    icon="external-link"
+    link="https://bioh201.adrienbabet.com/"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="images/anatomy.jpg"
+    imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+  >}}
+{{< /hextra/feature-grid >}}
+</div>
 
-{{< details-html title="External Brain Assignment Guidelines" closed="true" >}}
-{{< tallpdf path="/pdfs/External Brain Assignment Guidelines.pdf" height="75" >}}
-{{< /details-html >}}
-
-{{< details-html title="External Brain Assignment Grading Rubric" closed="true" >}}
-{{< tallpdf path="/pdfs/External Brain Assignment Grading Rubric.pdf" height="45" >}}
-{{< /details-html >}}
+<div class="my-40 flex justify-center space-x-12">
+{{< hextra/hero-button text="Contact" link="/contact" >}}
+{{< hextra/hero-button text="View CV" link="/cv" >}}
+</div>
