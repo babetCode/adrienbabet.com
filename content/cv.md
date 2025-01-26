@@ -12,7 +12,7 @@ title: My CV
     </a>
 </div>
 
-<div class="cv-content mx-auto px-6 pb-6 pt-0 border rounded-lg shadow-md bg-orange-50">
+<div class="cv-content mx-auto px-6 pb-6 pt-0 border rounded-lg shadow-xl">
     <h2>Skills</h2>
     <ul>
         <li>Positive collaborative team member</li>

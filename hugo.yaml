@@ -46,3 +46,14 @@ params:
   editURL:
     enable: true
     base: "https://github.com/babetCode/adrienbabet.com/edit/main/content"
+
+defaultContentLanguage: en
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+  fr:
+    languageName: Français
+    weight: 2
+

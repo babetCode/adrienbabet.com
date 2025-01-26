@@ -11,11 +11,11 @@ layout: hextra-home
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Snowboarder and exercise science student,&nbsp;<br class="sm:hx-block hx-hidden">interested in human movement and computer programming.
+  Snowboarder & kinesiology student,&nbsp;<br class="sm:hx-block hx-hidden">interested in human movement & computer programming.
 {{< /hextra/hero-subtitle >}}
 </div>
 
-{{< carousel images="/images/cliff.jpg,/images/hero-snow.jpg" >}}
+{{< carousel images="/images/comp.jpg,/images/trestle.jpg,/images/hero-snow.jpg,/images/cliff.jpg,/images/method.jpg,/images/hike.jpg,/images/double.jpg,/images/rainbow.jpg" >}}
 
 <div class="hx-mt-6"></div>
 {{< hextra/feature-grid >}}
@@ -31,14 +31,15 @@ layout: hextra-home
   {{< hextra/feature-card
     title="Projects"
     subtitle="My Collection of Curiosity"
+    link="/projects"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="images/speaking.jpg"
     imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(59, 197, 221, 0.15),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
-    title="Biomechanics"
-    subtitle="My KIN 325R Course Material"
+    title="KIN 325R"
+    subtitle="My Biomechanics Course Material"
     icon="external-link"
     link="https://kin325r.adrienbabet.com/"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
@@ -47,8 +48,8 @@ layout: hextra-home
     style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
-    title="Anatomy & Physiology"
-    subtitle="My BIOH 201 Course Material"
+    title="BIOH 201"
+    subtitle="My Anatomy & Physiology Course Material"
     icon="external-link"
     link="https://bioh201.adrienbabet.com/"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
