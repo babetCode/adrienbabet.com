@@ -24,7 +24,7 @@ menu:
         type: search
     - name: GitHub
       weight: 2
-      url: "https://github.com/babetCode/kin325r.adrienbabet.com"
+      url: "https://github.com/babetCode/adrienbabet.com"
       params:
         icon: github
 
