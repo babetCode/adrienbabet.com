@@ -4,7 +4,7 @@
 
 This website was created to store and share my projects.
 
-**Why I Built This**  
+### Why I Built This**  
 This project is more than just a collection of my notes. It's an opportunity for me to:
 - Deepen my understanding: By actively engaging with my projects through website creation, I aim to solidify my understanding and ideas around them.
 - Practice explaining the material: Translating complex concepts into clear and concise website content will help me refine my understanding and ability to explain these principles to others.
@@ -17,11 +17,11 @@ Expect to find resources including:
 - Personal Reflections: My own insights and observations on the my projects.
 
 **References**  
-This site was built using [Hugo](https://gohugo.io/) and [Hextra Starter Template](https://github.com/imfing/hextra-starter-template). Flowcharts were rendered with [Mermaid](https://mermaid.js.org/), $\LaTeX$ was rendered with [KaTeX](https://katex.org/), and diagrams were produced with [Asymptote](https://asymptote.sourceforge.io/).
+This site was built using [Hugo](https://gohugo.io/) and [Hextra Starter Template](https://github.com/imfing/hextra-starter-template). Flowcharts were rendered with [Mermaid](https://mermaid.js.org/), LaTeX was rendered with [KaTeX](https://katex.org/), and diagrams were produced with [Asymptote](https://asymptote.sourceforge.io/).
 
-<br><br>
-<div class="flex justify-center"> 
-    <a href="https://adrienbabet.com/" class="text-blue-500 hover:text-blue-700 no-underline" target="_blank"> 
+<br>
+<div style="display: flex; justify-content: center;"> 
+    <a href="https://adrienbabet.com/" target="_blank"> 
         &copy; adrienbabet.com
     </a>
 </div>
