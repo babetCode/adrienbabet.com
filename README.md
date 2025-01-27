@@ -25,3 +25,4 @@ This site was built using [Hugo](https://gohugo.io/) and [Hextra Starter Templat
         &copy; adrienbabet.com
     </a>
 </div>
+<p style="text-align:center;">Sample text with center alignment</p>
