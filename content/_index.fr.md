@@ -38,8 +38,18 @@ layout: hextra-home
     style="background: radial-gradient(ellipse at 50% 80%,rgba(59, 197, 221, 0.15),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
+    title="IMU Data Analysis"
+    subtitle="Kalman Filter for 6-Axis IMU"
+    icon="external-link"
+    link="https://biomech.adrienbabet.com/"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/IMU.jpg"
+    imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(48, 206, 87, 0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
     title="KIN 325R"
-    subtitle="Mes supports de cours de Biomécanique (en)"
+    subtitle="My Biomechanics Course Material"
     icon="external-link"
     link="https://kin325r.adrienbabet.com/"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
@@ -49,13 +59,33 @@ layout: hextra-home
   >}}
   {{< hextra/feature-card
     title="BIOH 201"
-    subtitle="Mes supports de cours d'Anatomie et Physiologie (en)"
+    subtitle="My Anatomy & Physiology Course Material"
     icon="external-link"
     link="https://bioh201.adrienbabet.com/"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="/images/anatomy.jpg"
     imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
+    title="KIN 320"
+    subtitle="My Ex. Phys. Course Material"
+    icon="external-link"
+    link="https://kin320.adrienbabet.com/"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/ex-phys.jpg"
+    imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(48, 206, 87, 0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
+    title="KIN 335"
+    subtitle="My Tissue Inj. & Adapt. Course Material"
+    icon="external-link"
+    link="https://kin335.netlify.app/"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+    image="/images/tissue-inj.jpg"
+    imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(48, 206, 87, 0.15),hsla(0,0%,100%,0));"
   >}}
 {{< /hextra/feature-grid >}}
 </div>

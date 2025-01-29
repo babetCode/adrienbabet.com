@@ -1,15 +1,14 @@
-+++
-date = '2024-12-26T19:08:56-07:00'
-draft = false
-title = 'Créateur de rythmes'
-+++
+---
+title: 'Beat Maker'
+weight: 2
+---
 
 {{< rawhtml >}}
 <div id="beat-maker" class="mx-auto">
     <div class="flex justify-between items-center mb-6">
         <div class="flex items-center space-x-4">
             <button id="play-pause" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-                Jouer
+                Play
             </button>
             <div class="flex items-center space-x-2">
                 <button id="bpm-decrease" class="px-2 rounded border border-gray-400">-</button>

@@ -1,8 +1,7 @@
-+++
-date = '2024-12-29T16:55:43-07:00'
-draft = false
-title = 'Anatomie'
-+++
+---
+title: 'Anatomie'
+weight: 4
+---
 
 {{< callout type="warning" >}}
   Cette page est en cours de construction et n'a pas encore été traduite en français.

@@ -1,16 +1,15 @@
-+++
-date = '2024-12-29T12:11:59-07:00'
-draft = false
-title = 'Snake Game'
-+++
+---
+title: 'Jeu du serpent'
+weight: 1
+---
 
 {{< callout type="warning" >}}
-  This game currently requires a keyboard (touch screen swipes are not recognized to control the snake).
+  Ce jeu nécessite actuellement un clavier (les balayages sur écran tactile ne sont pas reconnus pour contrôler le serpent).
 {{< /callout >}}
 
 {{< rawhtml >}}
 <div class="flex flex-col items-center">
-    <p>Use ←↑↓→ or WASD to control the snake</p>
+    <p>Utilisez ←↑↓→ ou WASD pour contrôler le serpent</p>
     
     <!-- Game Canvas -->
     <canvas id="gameCanvas" 
@@ -23,7 +22,7 @@ title = 'Snake Game'
     <div class="flex space-x-4">
         <button id="startButton" 
                 class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400 transition">
-            Start Game
+            Démarrer le jeu
         </button>
     </div>
 
