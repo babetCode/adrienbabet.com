@@ -39,16 +39,6 @@ layout: hextra-home
     style="background: radial-gradient(ellipse at 50% 80%,rgba(48, 206, 87, 0.15),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
-    title="KIN 325R"
-    subtitle="My Biomechanics Course Material"
-    icon="external-link"
-    link="https://kin325r.adrienbabet.com/"
-    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
-    image="images/OpenSimRunner.png"
-    imageClass="hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
-  >}}
-  {{< hextra/feature-card
     title="BIOH 201"
     subtitle="My Anatomy & Physiology Course Material"
     icon="external-link"
@@ -57,6 +47,16 @@ layout: hextra-home
     image="images/anatomy.jpg"
     imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+  >}}
+  {{< hextra/feature-card
+    title="KIN 325R"
+    subtitle="My Biomechanics Course Material"
+    icon="external-link"
+    link="https://kin325r.adrienbabet.com/"
+    class="hx-aspect-auto md:hx-aspect-[1.1/1] max-lg:hx-min-h-[340px]"
+    image="images/OpenSimRunner.png"
+    imageClass="hx-w-[180%] sm:hx-w-[110%] dark:hx-opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
   >}}
   {{< hextra/feature-card
     title="KIN 320"
