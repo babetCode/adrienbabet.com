@@ -32,7 +32,7 @@ layout: hextra-home
     title="IMU Data Analysis"
     subtitle="Kalman Filter for 6-Axis IMU"
     icon="external-link"
-    link="https://biomech.adrienbabet.com/"
+    link="https://imu.adrienbabet.com/"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
     image="images/IMU.jpg"
     imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
