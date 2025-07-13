@@ -38,7 +38,7 @@ layout: hextra-home
     imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(48, 206, 87, 0.15),hsla(0,0%,100%,0));"
   >}}
-  {{< hextra/feature-card
+  <!-- {{< hextra/feature-card
     title="BIOH 201"
     subtitle="My Anatomy & Physiology Course Material"
     icon="external-link"
@@ -77,9 +77,9 @@ layout: hextra-home
     image="images/tissue-inj.jpg"
     imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(5, 15, 27, 0.15),hsla(0,0%,100%,0));"
-  >}}
+  >}} -->
   {{< hextra/feature-card
-    title="Extra Fun"
+    title="Extras"
     subtitle="My Miscellaneous Projects"
     link="/projects"
     class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
