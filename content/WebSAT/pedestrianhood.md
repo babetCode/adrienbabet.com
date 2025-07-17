@@ -46,6 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 The pedestrian hood plot above shows:
 
-- **Line Landmarks**: Key structural lines like the hood edge, windshield line, and A-pillars
-- **Area Landmarks**: Impact zones highlighted as filled areas
-- **Impact Landmarks**: Critical impact points marked in red
+- **Line Landmarks**
+- **Area Landmarks**
+- **Impact Landmarks**
