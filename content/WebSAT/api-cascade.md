@@ -346,6 +346,156 @@ class PedestrianHoodResult:
     analysis_results: dict
 ````
 
+### 11. Complete the `dispatch_pedestrian_hood` function in sat.py
+
+Make sure `pedestrian_hood` is imported at the top of sat.py
+
+````python
+// ...existing code...
+
+def dispatch_pedestrian_hood(
+    hood_data: typing.List[dict],
+    vehicle_number: int,
+) -> types.PedestrianHoodResult:
+    pedestrian_hood_input = pedestrian_hood.PedestrianHoodInput(
+        hood_data=hood_data,
+        vehicle_number=vehicle_number,
+    )
+
+    pedestrian_hood_output = pedestrian_hood.calculate_pedestrian_hood(pedestrian_hood_input)
+
+    pedestrian_hood_result = types.PedestrianHoodResult(
+        vehicle_number=pedestrian_hood_output.vehicle_number,
+        hood_plot_data=pedestrian_hood_output.hood_plot_data,
+        analysis_results=pedestrian_hood_output.analysis_results,
+    )
+
+    return pedestrian_hood_result
+
+// ...existing code...
+````
+
+### 12. Add the API method to api.js
+
+````javascript
+// ...existing code...
+
+class WebSatApi {
+  constructor(
+    csrftoken,
+    {
+      // ...existing endpoints...
+      loadIntrusion,
+      loadPedestrianHood,  // Add this line
+      loadLoadCellAnalysis,
+      // ...existing endpoints...
+    },
+  ) {
+    this.csrftoken = csrftoken;
+    this.endpoints = {
+      // ...existing endpoints...
+      loadIntrusion,
+      loadPedestrianHood,  // Add this line
+      loadLoadCellAnalysis,
+      // ...existing endpoints...
+    };
+  }
+
+  // ...existing methods...
+
+  // Add this method in the VEHICLE METRICS section
+  async loadPedestrianHood(hoodData, vehicleNumber) {
+    const data = {
+      hood_data: hoodData,
+      vehicle_number: vehicleNumber,
+    };
+    return await this.sendAsyncComputationRequest(
+      this.endpoints.loadPedestrianHood,
+      data,
+    );
+  }
+
+  // ...existing code...
+}
+````
+
+### 13. Add to get_endpoint_configuration in views.py
+
+````python
+// ...existing code...
+
+def get_endpoint_configuration(request):
+    context = {}
+    # ...existing endpoints...
+    
+    context.update({
+        # ...existing endpoints...
+        "loadIntrusion": reverse("signal-methods:intrusion"),
+        "loadPedestrianHood": reverse("signal-methods:pedestrian_hood"),  # Add this line
+        "loadLoadCellAnalysis": reverse("signal-methods:load_cell_analysis"),
+        # ...existing endpoints...
+    })
+
+    return JsonResponse(context)
+````
+
+### 14. Add the URL pattern to urls.py
+
+````python
+// ...existing code...
+
+sat_patterns = [
+    # ...existing patterns...
+    path("intrusion", views.IntrusionAnalysis.as_view(), name="intrusion"),
+    path("pedestrian_hood", views.PedestrianHoodAnalysis.as_view(), name="pedestrian_hood"),  # Add this line
+    path("load_cell_analysis", views.LoadCellAnalysis.as_view(), name="load_cell_analysis"),
+    # ...existing patterns...
+]
+````
+
+### 15. Add the input serializer to serializers.py
+
+````python
+// ...existing code...
+
+class PedestrianHoodInputSerializer(serializers.Serializer):
+    hood_data = serializers.ListField(child=serializers.DictField())
+    vehicle_number = serializers.IntegerField()
+
+# The PedestrianHoodOutputSerializer is already there from the codebase context
+````
+
+### 16. Update TestsVehicleStore.js to handle hood data
+
+````javascript
+// ...existing code...
+
+export const useVehicleTestsStore = defineStore("testsVehicleStore", {
+  state: () => ({
+    // ...existing state...
+    vehicleHoodData: {},  // Add this line
+    // ...existing state...
+  }),
+
+  actions: {
+    // ...existing actions...
+    
+    addVehicleHoodData(testNumber, vehicleNumber, vehicleHoodData) {
+      if (!this.vehicleHoodData[testNumber]) {
+        this.vehicleHoodData[testNumber] = {};
+      }
+      this.vehicleHoodData[testNumber][vehicleNumber] = vehicleHoodData;
+    },
+    
+    // ...existing actions...
+  },
+});
+````
+
+### 17. Update the tab handling in your UI store
+
+Make sure TabsUIStore can handle the new "pedestrianHood" tab type, similar to how it handles "intrusion" tabs.
+
 This implementation follows the exact same pattern as the intrusion analysis, creating a complete pipeline from the frontend button click through to the backend processing and display in the content component. The key differences are:
 
 1. **Data structure**: Adapted for hood plot data instead of intrusion data
