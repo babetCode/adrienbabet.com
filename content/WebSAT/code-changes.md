@@ -4,7 +4,7 @@ draft: false
 title: 'Code Changes to Implement'
 ---
 
-{{< details-html title="ButtonIntrusion.vue → Backend API Call" closed="true" >}}
+{{< details-html title="Intrusion Example" closed="true" >}}
 {{< md >}}
 
 ### 1. Frontend Component Layer
@@ -85,7 +85,200 @@ The flow goes through Django's URL routing, view classes, serializers for data v
 
 To create a similar cascade for the ButtonHoodPlot.vue to make a backend call and display PedestrianHoodContent.vue, implement the following components following the same pattern:
 
-### 1. Update MetricsStore.js
+### 1. sat.py: Complete the `dispatch_pedestrian_hood` function
+
+Make sure `pedestrian_hood` is imported at the top of sat.py
+
+````python
+// ...existing code...
+
+def dispatch_pedestrian_hood(
+    hood_data: typing.List[dict],
+    vehicle_number: int,
+) -> types.PedestrianHoodResult:
+    pedestrian_hood_input = pedestrian_hood.PedestrianHoodInput(
+        hood_data=hood_data,
+        vehicle_number=vehicle_number,
+    )
+
+    pedestrian_hood_output = pedestrian_hood.calculate_pedestrian_hood(pedestrian_hood_input)
+
+    pedestrian_hood_result = types.PedestrianHoodResult(
+        vehicle_number=pedestrian_hood_output.vehicle_number,
+        hood_plot_data=pedestrian_hood_output.hood_plot_data,
+        analysis_results=pedestrian_hood_output.analysis_results,
+    )
+
+    return pedestrian_hood_result
+
+// ...existing code...
+````
+
+### 2. services.py: service function
+
+Create the service function:
+
+````python
+# ...existing code...
+
+def calculate_pedestrian_hood(
+    hood_data: typing.List[dict],
+    vehicle_number: int,
+) -> types.PedestrianHoodResult:
+    logger.debug(
+        "Calculating pedestrian hood for vehicle number %d",
+        vehicle_number,
+    )
+
+    # Call the SAT library function here
+    pedestrian_hood_result = sat.dispatch_pedestrian_hood(
+        hood_data=hood_data, 
+        vehicle_number=vehicle_number
+    )
+
+    return pedestrian_hood_result
+````
+
+### 3. serializers.py: serializer classes
+
+Create input and output serializers:
+
+````python
+# ...existing code...
+
+class PedestrianHoodInputSerializer(serializers.Serializer):
+    hood_data = serializers.ListField(child=serializers.DictField())
+    vehicle_number = serializers.IntegerField()
+
+class PedestrianHoodOutputSerializer(serializers.Serializer):
+    vehicle_number = serializers.IntegerField()
+    hood_plot_data = serializers.DictField()
+    analysis_results = serializers.DictField()
+````
+
+### 4. tasks.py: task function
+
+Create the Celery task:
+
+````python
+# ...existing code...
+
+@shared_task
+@registry.register_function(
+    name="pedestrian_hood",
+    input_serializer=serializers.PedestrianHoodInputSerializer,
+    output_serializer=serializers.PedestrianHoodOutputSerializer,
+)
+def calculate_pedestrian_hood_task(validated_data):
+    logger.debug("Calculating pedestrian hood: %s", validated_data)
+
+    result = services.calculate_pedestrian_hood(
+        validated_data["hood_data"],
+        validated_data["vehicle_number"],
+    )
+
+    return {
+        "vehicle_number": result.vehicle_number,
+        "hood_plot_data": result.hood_plot_data,
+        "analysis_results": result.analysis_results,
+    }
+````
+
+### 5. views.py: view class
+
+Create the view class for pedestrian hood analysis:
+
+````python
+# ...existing code...
+
+class PedestrianHoodAnalysis(SATView):
+    description = "Performs the pedestrian hood analysis."
+    input_serializer = serializers.PedestrianHoodInputSerializer
+    output_serializer = serializers.PedestrianHoodOutputSerializer
+    task = tasks.calculate_pedestrian_hood_task
+
+    @_sat_schema(description, input_serializer, output_serializer)
+    def post(self, request):
+        return super().post(request)
+````
+
+Add the endpoint to the configuration:
+
+````python
+# ...existing code...
+
+def get_endpoint_configuration(request):
+    context = {}
+    # ...existing endpoints...
+    
+    context.update({
+        # ...existing endpoints...
+        "loadPedestrianHood": reverse("signal-methods:pedestrian_hood"),
+        # ...existing endpoints...
+    })
+
+    return JsonResponse(context)
+````
+
+### 6. urls.py: url routing
+
+Add the URL pattern for pedestrian hood analysis:
+
+````python
+# ...existing code...
+
+sat_patterns = [
+    # ...existing patterns...
+    path("pedestrian_hood", views.PedestrianHoodAnalysis.as_view(), name="pedestrian_hood"),
+    # ...existing patterns...
+]
+````
+
+### 7. api.js: API method
+
+````javascript
+// ...existing code...
+
+class WebSatApi {
+  constructor(
+    csrftoken,
+    {
+      // ...existing endpoints...
+      loadIntrusion,
+      loadPedestrianHood,  // Add this line
+      loadLoadCellAnalysis,
+      // ...existing endpoints...
+    },
+  ) {
+    this.csrftoken = csrftoken;
+    this.endpoints = {
+      // ...existing endpoints...
+      loadIntrusion,
+      loadPedestrianHood,  // Add this line
+      loadLoadCellAnalysis,
+      // ...existing endpoints...
+    };
+  }
+
+  // ...existing methods...
+
+  // Add this method in the VEHICLE METRICS section
+  async loadPedestrianHood(hoodData, vehicleNumber) {
+    const data = {
+      hood_data: hoodData,
+      vehicle_number: vehicleNumber,
+    };
+    return await this.sendAsyncComputationRequest(
+      this.endpoints.loadPedestrianHood,
+      data,
+    );
+  }
+
+  // ...existing code...
+}
+````
+
+### 8. MetricsStore.js: loading method
 
 Add a `loadPedestrianHood` method to the MetricsStore:
 
@@ -124,129 +317,7 @@ async loadPedestrianHood(hoodData, testNumber, vehicleNumber) {
 },
 ````
 
-### 2. Update urls.py
-
-Add the URL pattern for pedestrian hood analysis:
-
-````python
-# ...existing code...
-
-sat_patterns = [
-    # ...existing patterns...
-    path("pedestrian_hood", views.PedestrianHoodAnalysis.as_view(), name="pedestrian_hood"),
-    # ...existing patterns...
-]
-````
-
-### 3. Add views.py class
-
-Create the view class for pedestrian hood analysis:
-
-````python
-# ...existing code...
-
-class PedestrianHoodAnalysis(SATView):
-    description = "Performs the pedestrian hood analysis."
-    input_serializer = serializers.PedestrianHoodInputSerializer
-    output_serializer = serializers.PedestrianHoodOutputSerializer
-    task = tasks.calculate_pedestrian_hood_task
-
-    @_sat_schema(description, input_serializer, output_serializer)
-    def post(self, request):
-        return super().post(request)
-````
-
-### 4. Update get_endpoint_configuration
-
-Add the endpoint to the configuration:
-
-````python
-# ...existing code...
-
-def get_endpoint_configuration(request):
-    context = {}
-    # ...existing endpoints...
-    
-    context.update({
-        # ...existing endpoints...
-        "loadPedestrianHood": reverse("signal-methods:pedestrian_hood"),
-        # ...existing endpoints...
-    })
-
-    return JsonResponse(context)
-````
-
-### 5. Add serializers.py classes
-
-Create input and output serializers:
-
-````python
-# ...existing code...
-
-class PedestrianHoodInputSerializer(serializers.Serializer):
-    hood_data = serializers.ListField(child=serializers.DictField())
-    vehicle_number = serializers.IntegerField()
-
-class PedestrianHoodOutputSerializer(serializers.Serializer):
-    vehicle_number = serializers.IntegerField()
-    hood_plot_data = serializers.DictField()
-    analysis_results = serializers.DictField()
-````
-
-### 6. Add tasks.py function
-
-Create the Celery task:
-
-````python
-# ...existing code...
-
-@shared_task
-@registry.register_function(
-    name="pedestrian_hood",
-    input_serializer=serializers.PedestrianHoodInputSerializer,
-    output_serializer=serializers.PedestrianHoodOutputSerializer,
-)
-def calculate_pedestrian_hood_task(validated_data):
-    logger.debug("Calculating pedestrian hood: %s", validated_data)
-
-    result = services.calculate_pedestrian_hood(
-        validated_data["hood_data"],
-        validated_data["vehicle_number"],
-    )
-
-    return {
-        "vehicle_number": result.vehicle_number,
-        "hood_plot_data": result.hood_plot_data,
-        "analysis_results": result.analysis_results,
-    }
-````
-
-### 7. Add services.py function
-
-Create the service function:
-
-````python
-# ...existing code...
-
-def calculate_pedestrian_hood(
-    hood_data: typing.List[dict],
-    vehicle_number: int,
-) -> types.PedestrianHoodResult:
-    logger.debug(
-        "Calculating pedestrian hood for vehicle number %d",
-        vehicle_number,
-    )
-
-    # Call the SAT library function here
-    pedestrian_hood_result = sat.dispatch_pedestrian_hood(
-        hood_data=hood_data, 
-        vehicle_number=vehicle_number
-    )
-
-    return pedestrian_hood_result
-````
-
-### 8. Update ButtonHoodPlot.vue
+### 9. ButtonHoodPlot.vue: button methods
 
 Modify the button to make the backend call:
 
@@ -327,7 +398,7 @@ export default {
 </script>
 ````
 
-### 9. Add types.py (if needed)
+### 10. types.py: do I need these?
 
 Create the result type:
 
@@ -341,80 +412,7 @@ class PedestrianHoodResult:
     analysis_results: dict
 ````
 
-### 10. Complete the `dispatch_pedestrian_hood` function in sat.py
-
-Make sure `pedestrian_hood` is imported at the top of sat.py
-
-````python
-// ...existing code...
-
-def dispatch_pedestrian_hood(
-    hood_data: typing.List[dict],
-    vehicle_number: int,
-) -> types.PedestrianHoodResult:
-    pedestrian_hood_input = pedestrian_hood.PedestrianHoodInput(
-        hood_data=hood_data,
-        vehicle_number=vehicle_number,
-    )
-
-    pedestrian_hood_output = pedestrian_hood.calculate_pedestrian_hood(pedestrian_hood_input)
-
-    pedestrian_hood_result = types.PedestrianHoodResult(
-        vehicle_number=pedestrian_hood_output.vehicle_number,
-        hood_plot_data=pedestrian_hood_output.hood_plot_data,
-        analysis_results=pedestrian_hood_output.analysis_results,
-    )
-
-    return pedestrian_hood_result
-
-// ...existing code...
-````
-
-### 11. Add the API method to api.js
-
-````javascript
-// ...existing code...
-
-class WebSatApi {
-  constructor(
-    csrftoken,
-    {
-      // ...existing endpoints...
-      loadIntrusion,
-      loadPedestrianHood,  // Add this line
-      loadLoadCellAnalysis,
-      // ...existing endpoints...
-    },
-  ) {
-    this.csrftoken = csrftoken;
-    this.endpoints = {
-      // ...existing endpoints...
-      loadIntrusion,
-      loadPedestrianHood,  // Add this line
-      loadLoadCellAnalysis,
-      // ...existing endpoints...
-    };
-  }
-
-  // ...existing methods...
-
-  // Add this method in the VEHICLE METRICS section
-  async loadPedestrianHood(hoodData, vehicleNumber) {
-    const data = {
-      hood_data: hoodData,
-      vehicle_number: vehicleNumber,
-    };
-    return await this.sendAsyncComputationRequest(
-      this.endpoints.loadPedestrianHood,
-      data,
-    );
-  }
-
-  // ...existing code...
-}
-````
-
-### 12. Update TestsVehicleStore.js to handle hood data
+### 11. TestsVehicleStore.js: handle hood data
 
 ````javascript
 // ...existing code...
@@ -441,7 +439,7 @@ export const useVehicleTestsStore = defineStore("testsVehicleStore", {
 });
 ````
 
-### 13. Update the tab handling in the UI store
+### 12. tabsUIStore: Update tab handling in the UI store?
 
 Make sure TabsUIStore can handle the new "pedestrianHood" tab type, similar to how it handles "intrusion" tabs.
 
