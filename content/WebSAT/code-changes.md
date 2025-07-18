@@ -1,7 +1,7 @@
 ---
 date: '2025-07-17T15:21:50-04:00'
 draft: false
-title: 'API Cascade Example:'
+title: 'Code Changes to Implement'
 ---
 
 {{< details-html title="ButtonIntrusion.vue → Backend API Call" closed="true" >}}
@@ -441,7 +441,7 @@ export const useVehicleTestsStore = defineStore("testsVehicleStore", {
 });
 ````
 
-### 13. Update the tab handling in your UI store
+### 13. Update the tab handling in the UI store
 
 Make sure TabsUIStore can handle the new "pedestrianHood" tab type, similar to how it handles "intrusion" tabs.
 
