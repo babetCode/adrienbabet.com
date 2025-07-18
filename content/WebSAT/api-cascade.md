@@ -4,7 +4,8 @@ draft: false
 title: 'API Cascade Example:'
 ---
 
-## ButtonIntrusion.vue → Backend API Call
+{{< details-html title="ButtonIntrusion.vue → Backend API Call" closed="true" >}}
+{{< md >}}
 
 ### 1. Frontend Component Layer
 **`ButtonIntrusion.vue`**
@@ -76,6 +77,9 @@ title: 'API Cascade Example:'
 **Content → MetricsStore → API Client → URLs → Views → Serializers → Tasks → Services → SAT Library**
 
 The flow goes through Django's URL routing, view classes, serializers for data validation, Celery tasks for async processing, and business logic services that interface with the SAT library for signal analysis calculations.
+
+{{< /md >}}
+{{< /details-html >}}
 
 ## ButtonHoodPlot.vue → Backend API Call
 
@@ -323,16 +327,7 @@ export default {
 </script>
 ````
 
-### 9. Update TabsUIStore
-
-Make sure the TabsUIStore can handle the new tab type:
-
-````javascript
-// In the TabsUIStore, add handling for "pedestrianHood" tab type
-// This would be similar to how "intrusion" tabs are handled
-````
-
-### 10. Add types.py (if needed)
+### 9. Add types.py (if needed)
 
 Create the result type:
 
@@ -346,7 +341,7 @@ class PedestrianHoodResult:
     analysis_results: dict
 ````
 
-### 11. Complete the `dispatch_pedestrian_hood` function in sat.py
+### 10. Complete the `dispatch_pedestrian_hood` function in sat.py
 
 Make sure `pedestrian_hood` is imported at the top of sat.py
 
@@ -375,7 +370,7 @@ def dispatch_pedestrian_hood(
 // ...existing code...
 ````
 
-### 12. Add the API method to api.js
+### 11. Add the API method to api.js
 
 ````javascript
 // ...existing code...
@@ -419,53 +414,7 @@ class WebSatApi {
 }
 ````
 
-### 13. Add to get_endpoint_configuration in views.py
-
-````python
-// ...existing code...
-
-def get_endpoint_configuration(request):
-    context = {}
-    # ...existing endpoints...
-    
-    context.update({
-        # ...existing endpoints...
-        "loadIntrusion": reverse("signal-methods:intrusion"),
-        "loadPedestrianHood": reverse("signal-methods:pedestrian_hood"),  # Add this line
-        "loadLoadCellAnalysis": reverse("signal-methods:load_cell_analysis"),
-        # ...existing endpoints...
-    })
-
-    return JsonResponse(context)
-````
-
-### 14. Add the URL pattern to urls.py
-
-````python
-// ...existing code...
-
-sat_patterns = [
-    # ...existing patterns...
-    path("intrusion", views.IntrusionAnalysis.as_view(), name="intrusion"),
-    path("pedestrian_hood", views.PedestrianHoodAnalysis.as_view(), name="pedestrian_hood"),  # Add this line
-    path("load_cell_analysis", views.LoadCellAnalysis.as_view(), name="load_cell_analysis"),
-    # ...existing patterns...
-]
-````
-
-### 15. Add the input serializer to serializers.py
-
-````python
-// ...existing code...
-
-class PedestrianHoodInputSerializer(serializers.Serializer):
-    hood_data = serializers.ListField(child=serializers.DictField())
-    vehicle_number = serializers.IntegerField()
-
-# The PedestrianHoodOutputSerializer is already there from the codebase context
-````
-
-### 16. Update TestsVehicleStore.js to handle hood data
+### 12. Update TestsVehicleStore.js to handle hood data
 
 ````javascript
 // ...existing code...
@@ -492,7 +441,7 @@ export const useVehicleTestsStore = defineStore("testsVehicleStore", {
 });
 ````
 
-### 17. Update the tab handling in your UI store
+### 13. Update the tab handling in your UI store
 
 Make sure TabsUIStore can handle the new "pedestrianHood" tab type, similar to how it handles "intrusion" tabs.
 
