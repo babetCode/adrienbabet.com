@@ -1,5 +1,5 @@
 ---
-title: 'All Projects'
+title: 'Miscellaneous'
 breadcrumbs: false
 cascade:
     type: 'docs'

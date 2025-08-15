@@ -3,6 +3,9 @@ title: Home
 layout: hextra-home
 ---
 
+<img src="/images/headshot-square.jpg" alt="Adrien Babet headshot" style="width:180px; border-radius: 50%; margin-bottom: 2rem;" />
+
+<div>
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
   Adrien Babet
@@ -14,8 +17,9 @@ layout: hextra-home
   Kinesiology major at Montana State University.&nbsp;<br class="sm:hx-block hx-hidden">I love studying human movement and computers.
 {{< /hextra/hero-subtitle >}}
 </div>
+</div>
 
-{{< carousel images="/images/comp.jpg,/images/trestle.jpg,/images/hero-snow.jpg,/images/cliff.jpg,/images/method.jpg,/images/hike.jpg,/images/double.jpg,/images/rainbow.jpg" >}}
+<!-- {{< carousel images="/images/comp.jpg,/images/trestle.jpg,/images/hero-snow.jpg,/images/cliff.jpg,/images/method.jpg,/images/hike.jpg,/images/double.jpg,/images/rainbow.jpg" >}} -->
 
 <div class="hx-mt-6"></div>
 {{< hextra/feature-grid >}}
