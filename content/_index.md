@@ -5,13 +5,13 @@ layout: hextra-home
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  Hello, I'm Adrien Babet
+  Adrien Babet
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  Snowboarder & kinesiology student,&nbsp;<br class="sm:hx-block hx-hidden">interested in human movement & computer programming.
+  Kinesiology major at Montana State University.&nbsp;<br class="sm:hx-block hx-hidden">I love studying human movement and computers.
 {{< /hextra/hero-subtitle >}}
 </div>
 
