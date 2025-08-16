@@ -1,6 +1,9 @@
 ---
 date: '2025-01-13'
 title: 'Typing Test'
+tags:
+  - Games
+  - Misc.
 ---
 
 How fast are your fingers?

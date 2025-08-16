@@ -1,6 +1,9 @@
 ---
 date: '2024-10-03'
 title: 'Beat Maker'
+tags:
+  - Games
+  - Misc.
 ---
 
 Make sick beats and get groovin'

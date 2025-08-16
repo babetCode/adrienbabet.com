@@ -1,6 +1,8 @@
 ---
 date: '2024-12-12'
 title: 'Anatomy'
+tags:
+  - A&P
 ---
 
 {{< callout type="warning" >}}
