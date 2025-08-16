@@ -1,9 +1,8 @@
 ---
 title: 'Projects'
 breadcrumbs: false
-# cascade:
-#     type: 'docs'
-type: blog
+cascade:
+    type: blog
 ---
 
 <!-- {{< cards cols=1 >}}

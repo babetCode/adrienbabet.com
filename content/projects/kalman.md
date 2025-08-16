@@ -3,8 +3,6 @@ date: '2025-01-28T18:24:22-07:00'
 draft: false
 title: 'Extented Kalman Filters for 6-Axis IMUs'
 math: true
-type: docs
-breadcrumbs: false
 weight: 1
 ---
 
