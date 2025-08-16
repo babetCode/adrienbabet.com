@@ -1,6 +1,12 @@
 ---
+date: '2024-10-03'
 title: 'Créateur de rythmes'
+tags:
+  - Games
+  - Misc.
 ---
+
+Créez des rythmes géniaux et mettez-vous en mouvement
 
 {{< rawhtml >}}
 <div id="beat-maker" class="mx-auto">

@@ -1,10 +1,12 @@
 ---
+date: '2025-01-13'
 title: 'Test de Dactylographie'
+tags:
+  - Games
+  - Misc.
 ---
 
-{{< callout type="warning" >}}
-  Cette page est en cours de construction et n'a pas encore été traduite en français.
-{{< /callout >}}
+Quelle est la vitesse de vos doigts ?
 
 {{< rawhtml >}}
 <div class="wrapper">
@@ -16,15 +18,15 @@ title: 'Test de Dactylographie'
     <div class="content">
       <ul class="result-details">
         <li class="time">
-          <p>Time Left:</p>
+          <p>Temps restant:</p>
           <span><b>60</b>s</span>
         </li>
         <li class="mistake">
-          <p>Mistakes:</p>
+          <p>Erreurs:</p>
           <span>0</span>
         </li>
         <li class="wpm">
-          <p>WPM:</p>
+          <p>MPM:</p>
           <span>0</span>
         </li>
         <li class="cpm">
@@ -32,7 +34,7 @@ title: 'Test de Dactylographie'
           <span>0</span>
         </li>
       </ul>
-      <button>Try Again</button>
+      <button>Essayer encore</button>
     </div>
   </div>
 </div>

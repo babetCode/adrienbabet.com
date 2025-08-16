@@ -1,10 +1,12 @@
 ---
+date: '2025-01-02T18:24:22-07:00'
 title: 'Jeu du serpent'
+tags:
+  - Games
+  - Misc.
 ---
 
-{{< callout type="warning" >}}
-  Ce jeu nécessite actuellement un clavier (les balayages sur écran tactile ne sont pas reconnus pour contrôler le serpent).
-{{< /callout >}}
+Jouez au serpent, le jeu classique de manger des pommes !
 
 {{< rawhtml >}}
 <div class="flex flex-col items-center">
@@ -33,3 +35,8 @@ title: 'Jeu du serpent'
 
 <script defer src="/js/snake.js"></script>
 {{< /rawhtml >}}
+
+
+{{< callout type="warning" >}}
+  Ce jeu nécessite actuellement un clavier (les balayages sur écran tactile ne sont pas reconnus pour contrôler le serpent).
+{{< /callout >}}

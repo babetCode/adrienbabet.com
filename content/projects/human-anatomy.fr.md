@@ -1,32 +1,35 @@
 ---
+date: '2024-12-12'
 title: 'Anatomie'
+tags:
+  - A&P
 ---
 
 {{< callout type="warning" >}}
   Cette page est en cours de construction et n'a pas encore été traduite en français.
 {{< /callout >}}
 
-## Bones
+## Os
 
 {{< filter "bones" "region" >}}
 
 {{< filetree/container >}}
-  {{< filetree/folder name="regions" >}}
+  {{< filetree/folder name="régions" >}}
     {{< filetree/file name="axial" >}}
-    {{< filetree/folder name="appendicular" state="closed" >}}
-      {{< filetree/file name="upper extremity" >}}
-      {{< filetree/file name="lower extremity" >}}
+    {{< filetree/folder name="appendiculaire" state="closed" >}}
+      {{< filetree/file name="membre supérieur" >}}
+      {{< filetree/file name="membre inférieur" >}}
     {{< /filetree/folder >}}
   {{< /filetree/folder >}}
   {{< filetree/file name="hugo.toml" >}}
 {{< /filetree/container >}}
 
 {{< filetree/container >}}
-  {{< filetree/folder name="regions" >}}
+  {{< filetree/folder name="régions" >}}
     {{< filetree/file name="axial" >}}
-    {{< filetree/folder name="appendicular" state="closed" >}}
-      {{< filetree/file name="upper extremity" >}}
-      {{< filetree/file name="lower extremity" >}}
+    {{< filetree/folder name="appendiculaire" state="closed" >}}
+      {{< filetree/file name="membre supérieur" >}}
+      {{< filetree/file name="membre inférieur" >}}
     {{< /filetree/folder >}}
   {{< /filetree/folder >}}
   {{< filetree/folder name="hugo.toml" >}}
@@ -34,32 +37,32 @@ title: 'Anatomie'
 {{< /filetree/container >}}
 
 {{< filetree/container >}}
-    {{< filetree/folder name="regions" >}}
+    {{< filetree/folder name="régions" >}}
       {{< filetree/folder name="axial" >}}
-        {{< filetree/folder name="skull" >}}
+        {{< filetree/folder name="crâne" >}}
         {{< /filetree/folder >}}
-        {{< filetree/folder name="spine" >}}
+        {{< filetree/folder name="colonne vertébrale" >}}
         {{< /filetree/folder >}}
-        {{< filetree/folder name="pelvis" >}}
+        {{< filetree/folder name="bassin" >}}
         {{< /filetree/folder >}}
         {{< filetree/folder name="thorax" >}}
         {{< /filetree/folder >}}
       {{< /filetree/folder >}}
-      {{< filetree/folder name="appendicular" >}}
-        {{< filetree/folder name="upper extremity" >}}
-          {{< filetree/folder name="upper arm" >}}
+      {{< filetree/folder name="appendiculaire" >}}
+        {{< filetree/folder name="membre supérieur" >}}
+          {{< filetree/folder name="bras" >}}
           {{< /filetree/folder >}}
-          {{< filetree/folder name="forearm" >}}
+          {{< filetree/folder name="avant-bras" >}}
           {{< /filetree/folder >}}
-          {{< filetree/folder name="hand" >}}
+          {{< filetree/folder name="main" >}}
           {{< /filetree/folder >}}
         {{< /filetree/folder >}}
-        {{< filetree/folder name="lower extremity" >}}
-          {{< filetree/folder name="thigh" >}}
+        {{< filetree/folder name="membre inférieur" >}}
+          {{< filetree/folder name="cuisse" >}}
           {{< /filetree/folder >}}
-          {{< filetree/folder name="lower leg" >}}
+          {{< filetree/folder name="jambe" >}}
           {{< /filetree/folder >}}
-          {{< filetree/folder name="foot" >}}
+          {{< filetree/folder name="pied" >}}
           {{< /filetree/folder >}}
         {{< /filetree/folder >}}
       {{< /filetree/folder >}}
