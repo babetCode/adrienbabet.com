@@ -1,6 +1,5 @@
 ---
 title: 'Jeu du serpent'
-weight: 1
 ---
 
 {{< callout type="warning" >}}

@@ -33,6 +33,9 @@ params:
       width: 40
       height: 40
 
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: wide
 
   footer:
     displayCopyright: false
@@ -41,6 +44,21 @@ params:
   editURL:
     enable: true
     base: "https://github.com/babetCode/adrienbabet.com/edit/main/content"
+
+  blog:
+    list:
+      displayTags: true
+      # date | lastmod | publishDate | title | weight
+      sortBy: date
+      sortOrder: desc # or "asc"
+      # Pagination
+      pagerSize: 20
+
+    article:
+      displayPagination: true
+
+  toc:
+    displayTags: true
 
 defaultContentLanguage: en
 

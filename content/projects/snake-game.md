@@ -1,6 +1,9 @@
 ---
+date: '2025-01-02T18:24:22-07:00'
 title: 'Snake Game'
-weight: 1
+tags:
+  - Biomechanics
+  - Math
 ---
 
 Play snake, the classic apple eating game!

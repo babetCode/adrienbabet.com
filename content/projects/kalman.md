@@ -1,9 +1,11 @@
 ---
-date: '2025-01-28T18:24:22-07:00'
+date: '2025-01-28'
 draft: false
-title: 'Extented Kalman Filters for 6-Axis IMUs'
+title: 'Extended Kalman Filter for 6-Axis IMU'
+tags:
+  - Biomechanics
+  - Math
 math: true
-weight: 1
 ---
 
 ## Overview

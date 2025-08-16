@@ -1,6 +1,6 @@
 ---
+date: '2025-01-13'
 title: 'Typing Test'
-weight: 3
 ---
 
 How fast are your fingers?

@@ -1,6 +1,5 @@
 ---
 title: 'Test de Dactylographie'
-weight: 3
 ---
 
 {{< callout type="warning" >}}

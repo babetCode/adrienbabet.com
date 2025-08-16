@@ -1,6 +1,6 @@
 ---
+date: '2024-12-12'
 title: 'Anatomy'
-weight: 4
 ---
 
 {{< callout type="warning" >}}

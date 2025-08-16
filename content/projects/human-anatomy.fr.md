@@ -1,6 +1,5 @@
 ---
 title: 'Anatomie'
-weight: 4
 ---
 
 {{< callout type="warning" >}}

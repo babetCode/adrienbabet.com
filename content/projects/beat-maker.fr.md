@@ -1,6 +1,5 @@
 ---
 title: 'Créateur de rythmes'
-weight: 2
 ---
 
 {{< rawhtml >}}

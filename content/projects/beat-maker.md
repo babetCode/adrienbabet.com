@@ -1,6 +1,6 @@
 ---
+date: '2024-10-03'
 title: 'Beat Maker'
-weight: 2
 ---
 
 Make sick beats and get groovin'
