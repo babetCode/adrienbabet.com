@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: Adrien Babet
+title: adrienbabet.com
 
 # import hextra as module
 module:
@@ -22,11 +22,6 @@ menu:
       weight: 1
       params:
         type: search
-    - name: GitHub
-      weight: 2
-      url: "https://github.com/babetCode/adrienbabet.com"
-      params:
-        icon: github
 
 params:
   navbar:

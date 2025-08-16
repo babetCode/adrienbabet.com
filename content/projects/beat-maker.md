@@ -3,6 +3,8 @@ title: 'Beat Maker'
 weight: 2
 ---
 
+Make sick beats and get groovin'
+
 {{< rawhtml >}}
 <div id="beat-maker" class="mx-auto">
     <div class="flex justify-between items-center mb-6">

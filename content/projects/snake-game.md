@@ -3,9 +3,7 @@ title: 'Snake Game'
 weight: 1
 ---
 
-{{< callout type="warning" >}}
-  This game currently requires a keyboard (touch screen swipes are not recognized to control the snake).
-{{< /callout >}}
+Play snake, the classic apple eating game!
 
 {{< rawhtml >}}
 <div class="flex flex-col items-center">
@@ -34,3 +32,8 @@ weight: 1
 
 <script defer src="/js/snake.js"></script>
 {{< /rawhtml >}}
+
+
+{{< callout type="warning" >}}
+  This game currently requires a keyboard (touch screen swipes are not recognized to control the snake).
+{{< /callout >}}

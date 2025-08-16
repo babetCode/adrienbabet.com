@@ -3,6 +3,8 @@ title: 'Typing Test'
 weight: 3
 ---
 
+How fast are your fingers?
+
 {{< rawhtml >}}
 <div class="wrapper">
   <input type="text" class="input-field">
