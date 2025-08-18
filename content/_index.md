@@ -33,7 +33,7 @@ layout: hextra-home
   </div>
 
   <div class="hidden lg:block">
-        <div class="mt-2">{{< new-tab-card link="/pdfs/Adrien-Babet-CV.pdf" title="CV" icon="document-text">}}</div>
+        <div class="mt-2">{{< new-tab-card link="/pdfs/aug2025cv.pdf" title="CV" icon="document-text">}}</div>
         <div class="mt-2">{{< card link="https://www.linkedin.com/in/adrien-babet-37bb29301/" title="LinkedIn" icon="linkedin">}}</div>
   </div>
 </div>
