@@ -8,11 +8,11 @@ tags:
 math: true
 ---
 
-## Overview
+IMU's are an increasingly popular way to gather movement data as wearable technology improves. However, the accelerometers and gyroscopes within them are noisy, making signal filters necessary to decrease error. 
 
-**Studying how people walk is an important task in healthcare, sports, and rehabilitation.** It helps us spot walking issues, track recovery progress, and even design better treatments for conditions like stroke or Parkinson's. **One great tool for this is the 6-axis Inertial Measurement Unit (IMU).** These devices combine a 3-axis accelerometer and a 3-axis gyroscope, and are very handy for collecting data about movement. You can stick them on a shoe, strap them to a leg, or embed them in a wearable device to track how someone moves.
+<!--more-->
 
-But here's the catch: accelerometers and gyroscopes, while powerful, have their downsides. Accelerometers measure linear acceleration and can estimate how far someone moves or how fast, **but they're noisy and can be thrown off by quick jolts or vibrations.** Gyroscopes, which measure rotational velocity, are great for capturing smooth and precise turning motions, like the angle of a foot during a step. However, they tend to drift over time, leading to small errors that snowball into big ones.
+While there are multiple types of IMUs, one very common type is called a 6-axis IMU. These devices combine a 3-axis accelerometer and a 3-axis gyroscope, and are very handy for collecting data about movement. You can stick them on a shoe, strap them to a leg, or embed them in a wearable device to track how someone moves. Accelerometers measure linear acceleration and can estimate how far someone moves or how fast, **but they're noisy and can be thrown off by quick jolts or vibrations.** Gyroscopes, which measure rotational velocity, are great for capturing smooth and precise turning motions, like the angle of a foot during a step. **However, they tend to drift over time**, leading to small errors that snowball into big ones.
 
 This is where sensor fusion has a lot to offer. By combining data from both sensors, fusion algorithms can balance the strengths of each to help compensate for the weaknesses of the other. Gyroscope data can stabilize noisy accelerometer readings, and accelerometer data can reduce gyroscope drift. **The sensor fusion algorithms discussed in this paper help this combination work smoothly**, producing clean, reliable data about how someone walks.
 
@@ -135,13 +135,10 @@ Lets try applying this to our problem. In the following sections, I describe the
 
 ### Python Info
 {{< details title="Getting started With Numpy" closed="true">}}
-Python is an ideal language for building a Kalman filter due to its simplicity, readability, and robust libraries for linear algebra and data analysis.
+Python is an ideal language for building a Kalman filter due to its simplicity, readability, and robust libraries for linear algebra and data analysis. For this reason, I will give examples at each key step of how this could be implemented in python using the Numpy library.
 
 **Numpy Arrays**<hr>
-NumPy (short for "numerical python") is a widely used python library for scientific computing, especially when performing linear algebra calculations. NumPy arrays are n-dimensional data structures that are well-suited for the matrix manipulations in Kalman filtering.
-
-**Matrix Multiplication with Numpy**<hr>
-Consider the expression
+NumPy (short for "numerical python") is a widely used python library for scientific computing, especially when performing linear algebra calculations. NumPy arrays are n-dimensional data structures that are well-suited for the matrix manipulations in Kalman filtering. For example, consider the expression
 $$\begin{bmatrix}6&2&4 \\\ -1&4&3 \\\ -2&9&3\end{bmatrix}
 \begin{bmatrix}4 \\\ -2 \\\ 1\end{bmatrix}.$$
 

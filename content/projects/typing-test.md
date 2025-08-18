@@ -1,4 +1,5 @@
 ---
+draft: true
 date: '2025-01-13'
 title: 'Typing Test'
 tags:
