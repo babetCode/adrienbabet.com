@@ -19,10 +19,6 @@ markup:
 
 menu:
   main:
-    - identifier: cv
-      name: CV
-      url: "https://adrienbabet.com/pdfs/CV.pdf"
-      weight: 1
     - identifier: projects
       name: Projects
       pageRef: /projects
