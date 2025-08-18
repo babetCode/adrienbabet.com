@@ -10,7 +10,7 @@ layout: hextra-home
 </style>
 <div class="flex w-full flex-row lg:flex-row gap-8 justify-center items-center">
   <div class="flex flex-col items-center gap-2">
-    <img src="/images/headshot-square.jpg" alt="Adrien Babet headshot" class="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover" />
+    <img src="/images/headshotnobg.png" alt="Adrien Babet headshot" class="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover shadow-md" />
     <div class="block lg:hidden">
         <div class="mt-2">{{< new-tab-card link="/pdfs/Adrien-Babet-CV.pdf" title="CV" icon="document-text">}}</div>
         <div class="mt-2">{{< card link="https://www.linkedin.com/in/adrien-babet-37bb29301/" title="LinkedIn" icon="linkedin">}}</div>
