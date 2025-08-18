@@ -39,7 +39,7 @@ layout: hextra-home
       title="Projects"
       link="/projects"
       class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-      image="images/speaking.jpg"
+      image="images/dragon.jpg"
       imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
       style="background: radial-gradient(ellipse at 50% 80%,rgba(224, 215, 43, 0.15),hsla(0,0%,100%,0));"
     >}}
