@@ -12,7 +12,7 @@ layout: hextra-home
   <div class="flex flex-col items-center gap-2">
     <img src="/images/headshotnobg.png" alt="Adrien Babet headshot" class="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover shadow-md" />
     <div class="block lg:hidden">
-        <div class="mt-2">{{< new-tab-card link="/pdfs/Adrien-Babet-CV.pdf" title="CV" icon="document-text">}}</div>
+        <div class="mt-2">{{< new-tab-card link="/pdfs/CV.pdf" title="CV" icon="document-text">}}</div>
         <div class="mt-2">{{< card link="https://www.linkedin.com/in/adrien-babet-37bb29301/" title="LinkedIn" icon="linkedin">}}</div>
   </div>
   </div>
@@ -33,12 +33,10 @@ layout: hextra-home
   </div>
 
   <div class="hidden lg:block">
-        <div class="mt-2">{{< new-tab-card link="/pdfs/aug2025cv.pdf" title="CV" icon="document-text">}}</div>
+        <div class="mt-2">{{< new-tab-card link="/pdfs/CV.pdf" title="CV" icon="document-text">}}</div>
         <div class="mt-2">{{< card link="https://www.linkedin.com/in/adrien-babet-37bb29301/" title="LinkedIn" icon="linkedin">}}</div>
   </div>
 </div>
-
-<!-- {{< carousel images="/images/comp.jpg,/images/trestle.jpg,/images/hero-snow.jpg,/images/cliff.jpg,/images/method.jpg,/images/hike.jpg,/images/double.jpg,/images/rainbow.jpg" >}} -->
 
 <div class="hx-mt-6 w-full flex flex-col md:flex-row justify-center gap-4 md:gap-8 max-w-4xl mx-auto">
   <div class="w-full md:w-auto md:min-w-[22rem] lg:min-w-[30rem]">
@@ -56,7 +54,7 @@ layout: hextra-home
       title="About"
       link="/about"
       class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-      image="images/method copy.jpg"
+      image="images/methodcropped.jpg"
       imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
       style="background: radial-gradient(ellipse at 50% 80%,rgba(85, 48, 206, 0.15),hsla(0,0%,100%,0));"
     >}}
