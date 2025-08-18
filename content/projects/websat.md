@@ -2,6 +2,9 @@
 date: '2025-08-01T21:15:24-06:00'
 draft: false
 title: 'Websat'
+tags:
+  - Biomechanics
+  - Programming
 ---
 
 In the summer of 2025, I worked at Wake Forest University School of Medicine [CIB](https://school.wakehealth.edu/departments/biomedical-engineering/center-for-injury-biomechanics) under Dr. Scott Gayzik and in collaboration with [Elemance](https://www.elemance.com/) on a novel web based signal analysis tool for vehicle safety testing.

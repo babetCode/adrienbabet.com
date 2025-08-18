@@ -2,15 +2,10 @@
 title: Home
 layout: hextra-home
 ---
-<style>
-.hextra-card {
-  max-width: 9.375em;
-  width: 9.375em;
-}
-</style>
+
 <div class="flex w-full flex-row lg:flex-row gap-8 justify-center items-center">
   <div class="flex flex-col items-center gap-2">
-    <img src="/images/headshotnobg.png" alt="Adrien Babet headshot" class="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover shadow-md" />
+    <img src="/images/headshotnobg.png" alt="Adrien Babet Photo" class="headshot-photo w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full object-cover" />
     <div class="block lg:hidden">
         <div class="mt-2">{{< card link="https://adrienbabet.com/pdfs/CV.pdf" title="CV" icon="document-text">}}</div>
         <div class="mt-2">{{< card link="https://www.linkedin.com/in/adrien-babet-37bb29301/" title="LinkedIn" icon="linkedin">}}</div>
@@ -60,3 +55,16 @@ layout: hextra-home
     >}}
   </div>
 </div>
+
+<style>
+  .hextra-card {
+    max-width: 9.375em;
+    width: 9.375em;
+  }
+  .headshot-photo {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  }
+  .dark .headshot-photo {
+    box-shadow: 0 4px 5px rgba(255, 255, 255, 0.15);
+  }
+</style>

@@ -5,6 +5,7 @@ title: 'Extended Kalman Filter for 6-Axis IMU'
 tags:
   - Biomechanics
   - Math
+  - Programming
 math: true
 ---
 
