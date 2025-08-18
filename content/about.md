@@ -9,4 +9,4 @@ I'm currently studying Kinesiology at Montana State University in Bozeman MT. He
 
 ## This Site
 
-This website is intended as a learning tool for myself as well as to share my projects with others. I built it using [Hugo](https://gohugo.io/) and [Hextra](https://github.com/imfing/hextra). Source code for this site is available at [github.com/babetCode/adrienbabet.com](https://github.com/babetCode/adrienbabet.com).
+This website is intended as a learning tool for myself as well as to share my projects with others. I built it using [Hugo](https://gohugo.io/) and [Hextra](https://github.com/imfing/hextra).

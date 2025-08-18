@@ -42,7 +42,7 @@ params:
     displayPoweredBy: false
 
   editURL:
-    enable: true
+    enable: false
     base: "https://github.com/babetCode/adrienbabet.com/edit/main/content"
 
   blog:
