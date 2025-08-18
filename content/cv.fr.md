@@ -1,6 +1,6 @@
 +++
 date = '2025-01-11T16:39:43-07:00'
-draft = false
+draft = true
 title = 'Mon CV'
 +++
 

@@ -1,4 +1,5 @@
 ---
+draft: true
 date: '2024-12-12'
 title: 'Anatomie'
 tags:

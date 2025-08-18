@@ -1,4 +1,5 @@
 ---
+draft: true
 date: '2025-01-28'
 draft: false
 title: 'Filtre de Kalman Étendu pour IMU 6 Axes'

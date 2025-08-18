@@ -1,4 +1,5 @@
 ---
+draft: true
 date: '2025-01-02T18:24:22-07:00'
 title: 'Jeu du serpent'
 tags:
