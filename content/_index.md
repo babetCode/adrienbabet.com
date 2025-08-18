@@ -41,17 +41,7 @@ layout: hextra-home
 <!-- {{< carousel images="/images/comp.jpg,/images/trestle.jpg,/images/hero-snow.jpg,/images/cliff.jpg,/images/method.jpg,/images/hike.jpg,/images/double.jpg,/images/rainbow.jpg" >}} -->
 
 <div class="hx-mt-6 w-full flex flex-col md:flex-row justify-center gap-4 md:gap-8 max-w-4xl mx-auto">
-    <div class="w-full md:w-auto md:min-w-[22rem] lg:min-w-[30rem]">
-    {{< hextra/feature-card
-      title="About"
-      link="/about"
-      class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-      image="images/method copy.jpg"
-      imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
-      style="background: radial-gradient(ellipse at 50% 80%,rgba(85, 48, 206, 0.15),hsla(0,0%,100%,0));"
-    >}}
-    </div>
-    <div class="w-full md:w-auto md:min-w-[22rem] lg:min-w-[30rem]">
+  <div class="w-full md:w-auto md:min-w-[22rem] lg:min-w-[30rem]">
     {{< hextra/feature-card
       title="Projects"
       link="/projects"
@@ -60,5 +50,15 @@ layout: hextra-home
       imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
       style="background: radial-gradient(ellipse at 50% 80%,rgba(224, 215, 43, 0.15),hsla(0,0%,100%,0));"
     >}}
-    </div>
+  </div>
+  <div class="w-full md:w-auto md:min-w-[22rem] lg:min-w-[30rem]">
+    {{< hextra/feature-card
+      title="About"
+      link="/about"
+      class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
+      image="images/method copy.jpg"
+      imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
+      style="background: radial-gradient(ellipse at 50% 80%,rgba(85, 48, 206, 0.15),hsla(0,0%,100%,0));"
+    >}}
+  </div>
 </div>
