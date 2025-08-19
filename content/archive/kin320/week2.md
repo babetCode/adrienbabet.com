@@ -1,9 +1,9 @@
-+++
-date = '2025-01-16T13:46:42-07:00'
-draft = false
-title = 'Week 2'
-weight = 3
-+++
+---
+date: '2025-01-16T13:46:42-07:00'
+draft: false
+title: 'Week 2'
+weight: 3
+---
 
 all or non law:
 upon threshold AP will be proagated at maximal velocity and consistently, or not at all

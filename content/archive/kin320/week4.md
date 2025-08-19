@@ -1,9 +1,9 @@
-+++
-date = '2025-02-04T13:46:26-07:00'
-draft = false
-title = 'Week 4'
-weight = 4
-+++
+---
+date: '2025-02-04T13:46:26-07:00'
+draft: false
+title: 'Week 4'
+weight: 4
+---
 
 ## Three Energy Systems
 

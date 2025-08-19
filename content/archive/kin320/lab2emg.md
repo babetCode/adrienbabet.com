@@ -1,9 +1,9 @@
-+++
-date = '2025-01-21T17:09:27-07:00'
-draft = false
-title = 'Lab 2 emg'
-weight = 5
-+++
+---
+date: '2025-01-21T17:09:27-07:00'
+draft: false
+title: 'Lab 2 emg'
+weight: 5
+---
 
 ### Electromyography Data Sheet
 

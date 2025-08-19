@@ -1,10 +1,10 @@
-+++
-date = '2025-01-16T13:43:03-07:00'
-draft = false
-title = 'Week1'
-breadcrumbs = false
-weight = 2
-+++
+---
+date: '2025-01-16T13:43:03-07:00'
+draft: false
+title: 'Week1'
+breadcrumbs: false
+weight: 2
+---
 
 {{< tabs items="Lecture Notes, Lab" >}}
 
