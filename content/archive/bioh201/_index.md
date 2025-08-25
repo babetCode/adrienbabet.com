@@ -7,9 +7,9 @@ cascade:
   type: 'docs'
 ---
 
-We're looking forward to another great semester of learning about humans. Throughout the semester, our favorite learning resources and fun facts will be posted to this site to help you study. Best of luck!
+BIOH 201 Lab - Anatomy & Physiology 1
 
-\- BIOH 201 Lab 3 Teaching Team
+<!--more-->
 
 ## Unnecessary (But Fun) Resources
 {{< cards >}}
