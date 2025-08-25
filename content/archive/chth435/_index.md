@@ -4,6 +4,8 @@ draft: false
 title: 'CHTH435'
 cascade:
     type: docs
+tags:
+  - Fall 2025
 ---
 
 CHTH435 Human Response to Stress - Fall 2025
