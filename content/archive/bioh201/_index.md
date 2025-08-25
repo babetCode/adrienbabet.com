@@ -29,12 +29,12 @@ BIOH 201 Lab - Anatomy & Physiology 1
 {{< /rawhtml >}}
 
 {{< details-html title="Syllabus" closed="true" >}}
-{{< tallpdf path="/archive/bioh201/pdfs/syllabus.pdf" >}}
+{{< tallpdf path="/archive/pdfs/bioh201/syllabus.pdf" >}}
 {{< /details-html >}}
 
 {{< details-html title="Lab Schedule" closed="true" >}}
-{{< tallpdf path="/archive/bioh201/pdfs/labSchedule.pdf" height="65" >}}
+{{< tallpdf path="/archive/pdfs/bioh201/labSchedule.pdf" height="65" >}}
 {{< /details-html >}}
 
 
-![anatomical views](/archive/bioh201/images/hero.jpg)
+![anatomical views](/archive/images/bioh201/hero.jpg)

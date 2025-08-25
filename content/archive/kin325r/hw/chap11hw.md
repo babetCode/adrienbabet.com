@@ -53,19 +53,19 @@ In sports and rehabilitation, this concept could help optimize strength training
 ## 4. Draw This
 
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw11p4a.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw11p4a.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 
 ## 5. Plot this
 
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw11p5a.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw11p5a.jpg" alt=" ">
 </div>
 Force Length Curve
 <div class="clear-both"></div>
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw11p5b.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw11p5b.jpg" alt=" ">
 </div>
 Force Velocity Curve
 <div class="clear-both"></div>
@@ -77,7 +77,7 @@ Force Velocity Curve
 ### A.
 
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw11p6a.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw11p6a.jpg" alt=" ">
 </div>
 The contractile component represents the muscle fibers, the series elastic component represents the tendon, and the parallel elastic component represents the connective tissue within the muscle (epimysium, perimysium, and endomysium).
 <div class="clear-both"></div>

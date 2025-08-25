@@ -5,7 +5,7 @@ weight: 1
 ---
 
 {{< details-html title="Assignment PDF" closed="true" >}}
-{{< tallpdf path="/archive/kin325r/pdfs/Chapter 1 - Intro to Biomechanics.pdf" height="80" >}}
+{{< tallpdf path="/archive/pdfs/kin325r/Chapter 1 - Intro to Biomechanics.pdf" height="80" >}}
 {{< /details-html >}}
 
 ### 1.

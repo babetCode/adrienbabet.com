@@ -16,7 +16,7 @@ moment arm (or lever arm) is abbreviated with:
 
 
 <div class="rounded-lg float-left max-w-s mr-4">
-    <img src="/archive/kin325r/images/curlTorque.png" alt="Hamstring Curl">
+    <img src="/archive/images/kin325r/curlTorque.png" alt="Hamstring Curl">
 </div>
 
 Letting $m$ be the mass, the length of the shank be $s$, and the knee flexion angle be $\theta$, the torque from the weight is $$\tau = 9.81(m)\cdot s(\cos\theta).$$
@@ -28,8 +28,8 @@ Letting $m$ be the mass, the length of the shank be $s$, and the knee flexion an
 ## ACL Rehab Example
 
 <div class="rounded-lg float-left max-w-s mr-4">
-    <img src="/archive/kin325r/images/ptACL.png" alt="Hamstring Curl">
-    <img src="/archive/kin325r/images/acl.png" alt="ACL">
+    <img src="/archive/images/kin325r/ptACL.png" alt="Hamstring Curl">
+    <img src="/archive/images/kin325r/acl.png" alt="ACL">
 </div>
 
 <div class="clear-both"></div>
@@ -37,7 +37,7 @@ Letting $m$ be the mass, the length of the shank be $s$, and the knee flexion an
 ## OA example
 
 <div class="rounded-lg float-left max-w-s mr-4">
-    <img src="/archive/kin325r/images/oa.png" alt="Hamstring Curl">
+    <img src="/archive/images/kin325r/oa.png" alt="Hamstring Curl">
 </div>
 
 <div class="clear-both"></div>

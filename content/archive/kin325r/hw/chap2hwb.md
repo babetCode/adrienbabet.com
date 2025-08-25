@@ -12,7 +12,7 @@ weight: 3
 
 #### a)
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/kin325r/images/hw2-4-a.svg" alt="FBD - Backpack">
+    <img src="/archive/images/kin325r/hw2-4-a.svg" alt="FBD - Backpack">
 </div>
 The force through the strap could also be described as $F_N$, since it is a normal force.
 
@@ -20,7 +20,7 @@ The force through the strap could also be described as $F_N$, since it is a norm
 
 #### b)
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/kin325r/images/hw2-4-b.svg" alt="FBD - Runner">
+    <img src="/archive/images/kin325r/hw2-4-b.svg" alt="FBD - Runner">
 </div>
 
 <div class="clear-both"></div>
@@ -156,7 +156,7 @@ for (int i = 0; i < magnitudes.length; ++i) {
 The "tip to tail" method is a graphical method for vector addition. By placing tail of vector 2 at the tip of vector 1 and drawing the vector from the tail of 1 to the tip of 2, we have the vector which is the sum of vectors 1 and 2.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/kin325r/images/hw2-5-a.svg" alt="tip to tail">
+    <img src="/archive/images/kin325r/hw2-5-a.svg" alt="tip to tail">
 </div>
 
 <div class="clear-both"></div>
@@ -166,7 +166,7 @@ The "tip to tail" method is a graphical method for vector addition. By placing t
 ##### A.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/kin325r/images/hw2-5-b-A.svg" alt="10 N right">
+    <img src="/archive/images/kin325r/hw2-5-b-A.svg" alt="10 N right">
 </div>
 
 <div class="clear-both"></div>
@@ -174,7 +174,7 @@ The "tip to tail" method is a graphical method for vector addition. By placing t
 ##### B.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/kin325r/images/hw2-5-b-B.svg" alt="20 N left">
+    <img src="/archive/images/kin325r/hw2-5-b-B.svg" alt="20 N left">
 </div>
 
 <div class="clear-both"></div>
@@ -182,7 +182,7 @@ The "tip to tail" method is a graphical method for vector addition. By placing t
 ##### C.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/kin325r/images/hw2-5-b-C.svg" alt="11.18 N at 63.43 deg">
+    <img src="/archive/images/kin325r/hw2-5-b-C.svg" alt="11.18 N at 63.43 deg">
 </div>
 
 Magnitude: $\sqrt{5^2 + 10^2} = 5\sqrt 5$  
@@ -193,7 +193,7 @@ Direction: $\arctan(10/5) = 63.43^\circ$
 ##### D.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/kin325r/images/hw2-5-b-D.svg" alt="tip to tail">
+    <img src="/archive/images/kin325r/hw2-5-b-D.svg" alt="tip to tail">
 </div>
 
 <div class="clear-both"></div>
@@ -201,7 +201,7 @@ Direction: $\arctan(10/5) = 63.43^\circ$
 ##### E.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/kin325r/images/hw2-5-b-E.svg" alt="tip to tail">
+    <img src="/archive/images/kin325r/hw2-5-b-E.svg" alt="tip to tail">
 </div>
 
 <div class="clear-both"></div>
@@ -588,7 +588,7 @@ drawVector((xpos + spacing, 100), length(result)/scale, degrees(angle(result)), 
 ## Notes
 
 {{< details-html title="Assignment PDF" closed="true" >}}
-{{< tallpdf path="/archive/kin325r/pdfs/Chapter 2 - Forces.pdf" height="80" >}}
+{{< tallpdf path="/archive/pdfs/kin325r/Chapter 2 - Forces.pdf" height="80" >}}
 {{< /details-html >}}
 
 I built the diagrams below with [asymptote vector graphics language](https://asymptote.sourceforge.io/) --- a descriptive vector graphics programming language for mathematical and technical diagrams.

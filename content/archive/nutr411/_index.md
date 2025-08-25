@@ -12,5 +12,5 @@ NUTR411 Nutrition for Sport & Exercise - Fall 2025
 <!-- more -->
 
 {{< details-html title="Textbook" closed="true" >}}
-{{< tallpdf path="/archive/nutr411/pdfs/textbook.pdf" >}}
+{{< tallpdf path="/archive/pdfs/nutr411/textbook.pdf" >}}
 {{< /details-html >}}

@@ -138,40 +138,40 @@ Power measures how quickly work is done (e.g., lifting weights faster requires m
 
 ## Plot This
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw10p3a.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw10p3a.jpg" alt=" ">
 </div>
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw10p3b.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw10p3b.jpg" alt=" ">
 </div>
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw10p3c.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw10p3c.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 
 ## Plot This Part Two
 
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw10p4a.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw10p4a.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 A material's mechanical properties (e.g., strength, stiffness) depend on how quickly it is deformed; polymers and metals at high temperatures often exhibit increased strength at higher strain rates. For example, silly Putty stretches slowly when pulled gently but snaps abruptly when yanked quickly, demonstrating strain rate sensitivity—its strength increases with faster deformation.
 
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw10p4b.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw10p4b.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 
 Rubber or viscoelastic materials show significant energy loss (as heat) when unloaded, resulting in a large loop between loading and unloading curves on a stress-strain plot. For example, a rubber band returns to its original shape after stretching but feels warm because energy was lost as heat, showing high hysteresis in its stress-strain loop.
 
 <div class="rounded-lg float-left max-w-md mr-4">
-    <img src="/archive/kin325r/images/hw10p4c.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw10p4c.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 
 When a material is held at a constant strain, stress gradually decreases over time due to molecular rearrangements, seen as a decaying exponential curve. For example, when a constant strain is applied to a viscoelastic material (e.g., chewing gum), the force-time curve shows an initial peak followed by a gradual decline as internal stresses relax over time.
 
 <div class="rounded-lg float-left max-w-md mt-4">
-    <img src="/archive/kin325r/images/hw10p4d.jpg" alt=" ">
+    <img src="/archive/images/kin325r/hw10p4d.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 
