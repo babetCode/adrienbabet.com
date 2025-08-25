@@ -1,8 +1,16 @@
 ---
 date: '2025-08-24T21:16:04-06:00'
 draft: false
-title: 'Nutr411'
+title: 'NUTR411'
+cascade:
+    type: docs
 ---
 
-NUTR411 Nutrition for Sport & Exercise - Spring 2025
-/archive/nutr411/pdfs/Sport_Nutrition_4th_Edition_-_Asker_Jeukendrup.pdf
+
+NUTR411 Nutrition for Sport & Exercise - Fall 2025
+
+<!-- more -->
+
+{{< details-html title="Textbook" closed="true" >}}
+{{< tallpdf path="/archive/nutr411/pdfs/textbook.pdf" >}}
+{{< /details-html >}}
