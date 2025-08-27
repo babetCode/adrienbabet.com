@@ -1,0 +1,11 @@
+{{ range .Page.Resources }}
+	{{ if not (eq .Name "_index.md") }}
+		{{< details-html title="{{ .Name }}" closed="true" >}}
+		{{ if eq .MediaType.Type "application/pdf" }}
+			{{< tallpdf path="{{ .RelPermalink }}" >}}
+		{{ else }}
+			<a href="{{ .RelPermalink }}">{{ .Name }}</a>
+		{{ end }}
+		{{< /details-html >}}
+	{{ end }}
+{{ end }}
