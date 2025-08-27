@@ -1,7 +1,7 @@
 ---
 date: '2025-01-15T10:32:15-07:00'
 draft: false
-title: 'BIOH 201'
+title: 'BIOH201'
 breadcrumbs: false
 cascade:
   type: 'docs'
