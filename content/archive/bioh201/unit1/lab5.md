@@ -6,7 +6,7 @@ weight: 5
 ---
 
 {{< details-html title="Lab 5" closed="true" >}}
-{{< tallpdf path="/archive/pdfs/bioh201/lab5.pdf" height="65" >}}
+{{< tallpdf path="/pdfs/bioh201/lab5.pdf" height="65" >}}
 {{< /details-html >}}
 
 ## Connective Tissue

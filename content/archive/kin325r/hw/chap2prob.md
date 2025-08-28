@@ -8,7 +8,7 @@ weight: 4
 
 ## 1.
 {{< details title="Problem Statement 1" closed="true" >}}
-![problem 1 PNG](/archive/images/kin325r/chap2p1.png)
+![problem 1 PNG](/images/kin325r/chap2p1.png)
 {{< /details >}}
 
 **Solution:**
@@ -29,13 +29,13 @@ Comparing this to the force of friction, we see that a 145 kg mass will produce 
 
 ## 2.
 {{< details title="Problem Statement 2" closed="true" >}}
-![problem 1 PNG](/archive/images/kin325r/chap2p2.png)
+![problem 1 PNG](/images/kin325r/chap2p2.png)
 {{< /details >}}
 
 **Solution:**
 
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/c2p2.jpg" alt="FBD - Runner">
+    <img src="/images/kin325r/c2p2.jpg" alt="FBD - Runner">
 </div>
 <br>
 We are given the mass of the skier, the angle of the slope, the magnitude and direction of air resistance, the dynamic friction between skis and snow, and are asked to calculate the resultant force assuming the skier is sliding straight down the slope. Let the $x$-axis be parallel to the slope, with the skier traveling in the positive $x$ direction. Now, since we are told that the skier is traveling straight down the slope, we know that the acceleration (and therefore net force) along the $y$-axis must be zero, so we solve for the $x$ compontents of our three forces: gravity, friction, and air resistance.
@@ -53,13 +53,13 @@ in the positive $x$ direction, or $\boxed{243.3\text N \text{ at }30^\circ \text
 
 ## 3.
 {{< details title="Problem Statement 3" closed="true" >}}
-![problem 1 PNG](/archive/images/kin325r/chap2p3.png)
+![problem 1 PNG](/images/kin325r/chap2p3.png)
 {{< /details >}}
 
 **Solution:**
 
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/c2p3-a.jpg" alt="FBD - Runner">
+    <img src="/images/kin325r/c2p3-a.jpg" alt="FBD - Runner">
 </div>
 <br>
 Let the $y$-axis be parallel to the tibia, so that the $x$ component of our resultant force equals the shear force, and the $y$ component equals the compressive force. Let the femur be $60^\circ$ counter-clockwise from the positive $x$-axis (so that positive $x$ is posterior and positive $y$ is superior). Now, in degrees counter-clockwise from positive $x$, we have the force of the gastroc at $87^\circ$, force of hamstrings at $60^\circ$, and force of quadriceps at $105^\circ$.<div class="clear-both"></div>

@@ -20,5 +20,5 @@ weight: 3
 - viscosity
 
 {{< details-html title="Lab 3 PDF" closed="true" >}}
-{{< tallpdf path="/archive/pdfs/bioh201/lab3.pdf" height="65" >}}
+{{< tallpdf path="/pdfs/bioh201/lab3.pdf" height="65" >}}
 {{< /details-html >}}

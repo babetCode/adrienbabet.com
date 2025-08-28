@@ -6,6 +6,6 @@ weight: 1
 ---
 
 {{< details-html title="Lab 1 PDF" closed="true" >}}
-{{< tallpdf path="/archive/pdfs/kin325r/lab1.pdf" height="80" >}}
+{{< tallpdf path="/pdfs/kin325r/lab1.pdf" height="80" >}}
 {{< /details-html >}}
 

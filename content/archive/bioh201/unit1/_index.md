@@ -7,9 +7,9 @@ breadcrumbs: false
 weight: 1
 ---
 {{< cards >}}
-    {{< card link="/archive/bioh201/unit1/lab1" title="Lab 1" subtitle="Anatomical terms, Organ systems, Microscopy" >}}
-    {{< card link="/archive/bioh201/unit1/lab2" title="Lab 2" subtitle="Cellular Anatomy and Mitosis" >}}
-    {{< card link="/archive/bioh201/unit1/lab3" title="Lab 3" subtitle="Membrane Transport" >}}
-    {{< card link="/archive/bioh201/unit1/lab4" title="Lab 4" subtitle="Epithelial Tissue" >}}
-    {{< card link="/archive/bioh201/unit1/lab5" title="Lab 5" subtitle="Connective Tissue" >}}
+    {{< card link="/bioh201/unit1/lab1" title="Lab 1" subtitle="Anatomical terms, Organ systems, Microscopy" >}}
+    {{< card link="/bioh201/unit1/lab2" title="Lab 2" subtitle="Cellular Anatomy and Mitosis" >}}
+    {{< card link="/bioh201/unit1/lab3" title="Lab 3" subtitle="Membrane Transport" >}}
+    {{< card link="/bioh201/unit1/lab4" title="Lab 4" subtitle="Epithelial Tissue" >}}
+    {{< card link="/bioh201/unit1/lab5" title="Lab 5" subtitle="Connective Tissue" >}}
 {{< /cards >}}

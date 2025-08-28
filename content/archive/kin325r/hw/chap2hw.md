@@ -7,7 +7,7 @@ weight: 2
 ---
 
 {{< details-html title="Assignment PDF" closed="true" >}}
-{{< tallpdf path="/archive/pdfs/kin325r/Chapter 2 - Forces.pdf" height="80" >}}
+{{< tallpdf path="/pdfs/kin325r/Chapter 2 - Forces.pdf" height="80" >}}
 {{< /details-html >}}
 
 ### 1. Definitions and Vocabulary

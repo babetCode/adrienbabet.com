@@ -68,10 +68,10 @@ math: true
 
 ### b.
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/hw5p2bb.jpg" alt=" ">
+    <img src="/images/kin325r/hw5p2bb.jpg" alt=" ">
 </div>
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/hw5p2b.png" alt=" ">
+    <img src="/images/kin325r/hw5p2b.png" alt=" ">
 </div>
 <div class="clear-both"></div>
 

@@ -19,7 +19,7 @@ math: true
 > **a)** Draw an appropriate free body diagram for this problem – make sure all of the appropriate forces are clearly labeled.
 
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/c8p1a.jpg" alt=" ">
+    <img src="/images/kin325r/c8p1a.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 
@@ -80,7 +80,7 @@ $$ I_\text{LE} = 13.685\text{ kg}\cdot (0.560 \cdot 0.9805\text{ m})^2 \approx \
 
 > **b)** Based on the stick figure shown above at right, draw a free body diagram for this problem.
 <div class="rounded-lg float-left max-w-44 mr-4">
-    <img src="/archive/images/kin325r/c8p2b.jpg" alt=" ">
+    <img src="/images/kin325r/c8p2b.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 

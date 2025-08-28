@@ -21,7 +21,7 @@ $$\begin{pmatrix}0.52 \\\ 1.04\end{pmatrix}.$$
 ### B.
 
 <div class="rounded-lg float-left max-w-s mr-4">
-    <img src="/archive/images/kin325r/c4probs1b.png" alt=" ">
+    <img src="/images/kin325r/c4probs1b.png" alt=" ">
 </div>
 In this position, she is not stable. This is because her center of mass is not above her base of support, and is instead displaced to the positive $x$ direction. In order to recover to a position of stability, she would need an external force applied in the necagive $x$ direction. Since her left foot is the only part of her body contacting an object to produce force against, the only way to generate a force in the negative $x$ direction would be to apply a force by her foot on the beam $F_\text{Foot on Beam}$ in the positive $x$ direction, creating a third law pair force to push herself back towads the negative $x$, $F_\text{Beam on Foot}$. There are several dificulties with this.
 

@@ -10,7 +10,7 @@ A first week of anatomical positions, planes, directions, regions, and organ sys
 ## Anatomical Position
 {{< rawhtml >}}
     <div class="mt-3">
-        <img src="/archive/images/bioh201/anatomical-position.webp" alt="Anatomical Position" class="w-1/2 m-0 ml-3 max-h-72 float-right" />
+        <img src="/images/bioh201/anatomical-position.webp" alt="Anatomical Position" class="w-1/2 m-0 ml-3 max-h-72 float-right" />
         <div>
             In the anatomical position, the human body is standing upright with feet together, arms at the sides, and the head, eyes, and palms facing forward. This position is used as a standard reference in health and medical fields for consistency when describing the location and relation of body parts to one another. This avoids ambiguity and serves as the baseline from which other movements and positions are measured.
         </div>
@@ -20,7 +20,7 @@ A first week of anatomical positions, planes, directions, regions, and organ sys
 ## Anatomical Planes
 {{< rawhtml >}}
 <div class="mt-3">
-    <img src="/archive/images/bioh201/planes.png" alt="Anatomical Position" class="w-1/2 m-0 ml-3 max-h-80 float-right" />
+    <img src="/images/bioh201/planes.png" alt="Anatomical Position" class="w-1/2 m-0 ml-3 max-h-80 float-right" />
     <div>
         Anatomical planes are imaginary lines used to divide the body into sections for descriptive and diagnostic purposes. The <strong>frontal</strong> plane (also known as the coronal plane) divides the body into front (anterior) and back (posterior) sections. The <strong>sagittal</strong> plane splits the body into left and right parts, with the midsagittal plane dividing it equally in the middle. Lastly, the <strong>transverse</strong> plane (or horizontal plane) cuts the body into upper (superior) and lower (inferior) portions. A handy way to remember these planes by their first letters is: Frontal (front), Sagittal (side), and Transverse (top). This mnemonic device helps reinforce the association between each plane and its respective orientation in the body.
     </div>
@@ -30,7 +30,7 @@ A first week of anatomical positions, planes, directions, regions, and organ sys
 ## Anatomical Directions
 {{< rawhtml >}}
 <div class="mt-3">
-    <img src="/archive/images/bioh201/directions.png" alt="Anatomical Position" class="w-1/3 m-0 ml-3 max-h-80 float-right" />
+    <img src="/images/bioh201/directions.png" alt="Anatomical Position" class="w-1/3 m-0 ml-3 max-h-80 float-right" />
     <div>
         Anatomical directions are terms used to describe the locations and relationships of different body parts:
         <ul>
@@ -109,7 +109,7 @@ A first week of anatomical positions, planes, directions, regions, and organ sys
     </ul>
     <h3>Abdominal Quadrant Regions</h3>
     <div class="mt-3">
-        <img src="/archive/images/bioh201/abdominal-quadrants.jpg" alt="Anatomical Position" class="w-1/6 m-0 ml-3 max-h-80 float-right" />
+        <img src="/images/bioh201/abdominal-quadrants.jpg" alt="Anatomical Position" class="w-1/6 m-0 ml-3 max-h-80 float-right" />
         <div>
             <ul>
                 <li><strong>Left Upper Quadrant (LUQ):</strong> Upper left abdomen, includes stomach and spleen.</li>
@@ -121,7 +121,7 @@ A first week of anatomical positions, planes, directions, regions, and organ sys
     </div>
     <h3>Abdominal Grid Regions</h3>
     <div class="mt-3">
-        <img src="/archive/images/bioh201/abdominal-grid.jpg" alt="Anatomical Position" class="w-1/6 m-0 ml-3 max-h-80 float-right" />
+        <img src="/images/bioh201/abdominal-grid.jpg" alt="Anatomical Position" class="w-1/6 m-0 ml-3 max-h-80 float-right" />
         <div>
             <ul>
                 <li><strong>Umbilical:</strong> Center of the abdomen, around the navel.</li>
@@ -206,7 +206,7 @@ A first week of anatomical positions, planes, directions, regions, and organ sys
 ## Microscopy
 {{< rawhtml >}}
 <div class="mt-3">
-    <img src="/archive/images/bioh201/microscope.jpg" alt="Anatomical Position" class="w-1/2 m-0 ml-3 max-h-80 float-right" />
+    <img src="/images/bioh201/microscope.jpg" alt="Anatomical Position" class="w-1/2 m-0 ml-3 max-h-80 float-right" />
     <div>
         <ul>
             <li>Carry the microscope with one hand on the base and one hand on the arm.</li>

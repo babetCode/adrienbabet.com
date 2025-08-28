@@ -14,5 +14,5 @@ NUTR321 Nutrition in the Life Cycle - Fall 2025
 <!-- more -->
 
 {{< details-html title="Textbook" closed="true" >}}
-{{< tallpdf path="/archive/pdfs/nutr321/Nutrition Through the Life Cycle (8th Ed.) by Judith E. Brown.pdf" >}}
+{{< tallpdf path="/pdfs/nutr321/Nutrition Through the Life Cycle (8th Ed.) by Judith E. Brown.pdf" >}}
 {{< /details-html >}}

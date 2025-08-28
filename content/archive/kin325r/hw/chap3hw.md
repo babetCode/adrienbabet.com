@@ -7,7 +7,7 @@ weight: 5
 ---
 
 {{< details-html title="Assignment PDF" closed="true" >}}
-{{< tallpdf path="/archive/pdfs/kin325r/c3hw.pdf" height="80" >}}
+{{< tallpdf path="/pdfs/kin325r/c3hw.pdf" height="80" >}}
 {{< /details-html >}}
 
 ## 1.
@@ -31,7 +31,7 @@ weight: 5
 ### b)
 
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/c3hw2-b.jpg" alt="FBD - Runner">
+    <img src="/images/kin325r/c3hw2-b.jpg" alt="FBD - Runner">
 </div>
 <div class="clear-both"></div>
 

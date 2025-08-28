@@ -12,7 +12,7 @@ weight: 3
 
 #### a)
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/images/kin325r/hw2-4-a.svg" alt="FBD - Backpack">
+    <img src="/images/kin325r/hw2-4-a.svg" alt="FBD - Backpack">
 </div>
 The force through the strap could also be described as $F_N$, since it is a normal force.
 
@@ -20,7 +20,7 @@ The force through the strap could also be described as $F_N$, since it is a norm
 
 #### b)
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/images/kin325r/hw2-4-b.svg" alt="FBD - Runner">
+    <img src="/images/kin325r/hw2-4-b.svg" alt="FBD - Runner">
 </div>
 
 <div class="clear-both"></div>
@@ -156,7 +156,7 @@ for (int i = 0; i < magnitudes.length; ++i) {
 The "tip to tail" method is a graphical method for vector addition. By placing tail of vector 2 at the tip of vector 1 and drawing the vector from the tail of 1 to the tip of 2, we have the vector which is the sum of vectors 1 and 2.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/images/kin325r/hw2-5-a.svg" alt="tip to tail">
+    <img src="/images/kin325r/hw2-5-a.svg" alt="tip to tail">
 </div>
 
 <div class="clear-both"></div>
@@ -166,7 +166,7 @@ The "tip to tail" method is a graphical method for vector addition. By placing t
 ##### A.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/images/kin325r/hw2-5-b-A.svg" alt="10 N right">
+    <img src="/images/kin325r/hw2-5-b-A.svg" alt="10 N right">
 </div>
 
 <div class="clear-both"></div>
@@ -174,7 +174,7 @@ The "tip to tail" method is a graphical method for vector addition. By placing t
 ##### B.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/images/kin325r/hw2-5-b-B.svg" alt="20 N left">
+    <img src="/images/kin325r/hw2-5-b-B.svg" alt="20 N left">
 </div>
 
 <div class="clear-both"></div>
@@ -182,7 +182,7 @@ The "tip to tail" method is a graphical method for vector addition. By placing t
 ##### C.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/images/kin325r/hw2-5-b-C.svg" alt="11.18 N at 63.43 deg">
+    <img src="/images/kin325r/hw2-5-b-C.svg" alt="11.18 N at 63.43 deg">
 </div>
 
 Magnitude: $\sqrt{5^2 + 10^2} = 5\sqrt 5$  
@@ -193,7 +193,7 @@ Direction: $\arctan(10/5) = 63.43^\circ$
 ##### D.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/images/kin325r/hw2-5-b-D.svg" alt="tip to tail">
+    <img src="/images/kin325r/hw2-5-b-D.svg" alt="tip to tail">
 </div>
 
 <div class="clear-both"></div>
@@ -201,7 +201,7 @@ Direction: $\arctan(10/5) = 63.43^\circ$
 ##### E.
 
 <div class="bg-white border-4 rounded-lg float-left mr-4">
-    <img src="/archive/images/kin325r/hw2-5-b-E.svg" alt="tip to tail">
+    <img src="/images/kin325r/hw2-5-b-E.svg" alt="tip to tail">
 </div>
 
 <div class="clear-both"></div>
@@ -588,12 +588,12 @@ drawVector((xpos + spacing, 100), length(result)/scale, degrees(angle(result)), 
 ## Notes
 
 {{< details-html title="Assignment PDF" closed="true" >}}
-{{< tallpdf path="/archive/pdfs/kin325r/Chapter 2 - Forces.pdf" height="80" >}}
+{{< tallpdf path="/pdfs/kin325r/Chapter 2 - Forces.pdf" height="80" >}}
 {{< /details-html >}}
 
 I built the diagrams below with [asymptote vector graphics language](https://asymptote.sourceforge.io/) --- a descriptive vector graphics programming language for mathematical and technical diagrams.
 
-If you are viewing the [site](https://archive/kin325r.adrienbabet.com/week2/chap2hwb/) version of this page, you can try my code yourself by clicking the "My Source Code" drop-downs, copying to clipboard with the
+If you are viewing the [site](https://kin325r.adrienbabet.com/week2/chap2hwb/) version of this page, you can try my code yourself by clicking the "My Source Code" drop-downs, copying to clipboard with the
 <svg xmlns="http://www.w3.org/2000/svg" class="inline-block h-6 w-6" fill="none" viewBox="0 0 30 30" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
 </svg>

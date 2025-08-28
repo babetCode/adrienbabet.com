@@ -10,21 +10,21 @@ math: true
 
 ### A.
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/hw4p1a.jpg" alt=" ">
+    <img src="/images/kin325r/hw4p1a.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 
 ### B.
 
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/hw4p1b.jpg" alt=" ">
+    <img src="/images/kin325r/hw4p1b.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 
 ### C.
 
 <div class="rounded-lg float-left max-w-s mr-4">
-    <img src="/archive/images/kin325r/hw4p1c.jpg" alt=" ">
+    <img src="/images/kin325r/hw4p1c.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 As the person raises their arms, the COM rises. As person squats, the COM lowers, but it rises relative to the torso.
@@ -61,10 +61,10 @@ This can be be done with varying degrees of fidelity depending on the applicatio
 ### B.
 
 <div class="rounded-lg float-left max-w-40 mr-4">
-    <img src="/archive/images/kin325r/hw4p3b.jpg" alt=" ">
+    <img src="/images/kin325r/hw4p3b.jpg" alt=" ">
 </div>
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/hw4p3b.png" alt=" ">
+    <img src="/images/kin325r/hw4p3b.png" alt=" ">
 </div>
 <div class="clear-both"></div>
 
@@ -79,7 +79,7 @@ An individual’s stability depends on both the location of their COM and their 
 ### D.
 
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/hw4p3d.jpg" alt=" ">
+    <img src="/images/kin325r/hw4p3d.jpg" alt=" ">
 </div>
 <div class="clear-both"></div>
 

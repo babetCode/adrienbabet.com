@@ -9,7 +9,7 @@ Cellular Anatomy and Mitosis
 
 ## Cell Structures
 
-![Cell Structure](/archive/images/bioh201/cell.png)
+![Cell Structure](/images/bioh201/cell.png)
 
 1. **Nucleus**:
    - Controls cellular activities and stores genetic material (DNA).

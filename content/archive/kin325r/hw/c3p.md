@@ -8,7 +8,7 @@ math: true
 
 ## 1
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/c3p2.jpg" alt="FBD - Runner">
+    <img src="/images/kin325r/c3p2.jpg" alt="FBD - Runner">
 </div>
 <div class="clear-both"></div>
 The moment arm on our gravity force will equal $\cos(30^\circ)(0.3\text m)$, so to balance our torques, we have
@@ -20,7 +20,7 @@ $$F_\text{tendon} = \frac{\cos(30^\circ)(0.3\text m)(3\text{kg})\left(9.81\text{
 
 **A.**
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/c3p22.jpg" alt="FBD - Runner">
+    <img src="/images/kin325r/c3p22.jpg" alt="FBD - Runner">
 </div>
 <div class="clear-both"></div>
 
@@ -49,7 +49,7 @@ The $x$ component of the latissimus force would add to the deltoid, but the $y$ 
 
 **A.**
 <div class="rounded-lg float-left max-w-xs mr-4">
-    <img src="/archive/images/kin325r/c3p3.jpg" alt="FBD - Runner">
+    <img src="/images/kin325r/c3p3.jpg" alt="FBD - Runner">
 </div>
 <div class="clear-both"></div>
 
