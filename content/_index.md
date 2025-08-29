@@ -49,7 +49,7 @@ layout: hextra-home
       title="About"
       link="/about"
       class="hx-aspect-auto md:hx-aspect-[1.1/1] max-md:hx-min-h-[340px]"
-      image="/images/dragon.jpg"
+      image="/images/dragon-rotate.jpg"
       imageClass="hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
       style="background: radial-gradient(ellipse at 50% 80%,rgba(48, 93, 206, 0.15),hsla(0,0%,100%,0));"
     >}}

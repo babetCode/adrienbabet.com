@@ -8,7 +8,6 @@ tags:
   - Fall 2025
 ---
 
-
 KIN410 Advanced Strength & Conditioning - Fall 2025
 
 <!-- more -->
