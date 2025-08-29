@@ -1,6 +1,6 @@
 ---
 date: '2025-08-28T15:51:29-06:00'
-draft: true
+draft: false
 title: 'Cla Games'
 ---
 
@@ -24,21 +24,21 @@ title: 'Cla Games'
 
         <select id="startingPosition" name="startingPosition" class="mb-4 border border-gray-600 rounded-md p-2" onchange="toggleCustomInput(this)">
             <option value="" selected disabled>Select a starting position</option>
-            <optgroup label="Both Standing">
+            <optgroup label="Standing">
                 <option value="standing-disconnected">Disconnected</option>
                 <option value="standing-chest-to-back">Chest to back</option>
-                <option value="right">Underhook</option>
-                <option value="right">Underhook</option>
+                <option value="single-leg">Single leg</option>
+                <option value="standing-headlock">Front headlock</option>
             </optgroup>
-            <optgroup label="One Standing, One Down">
-                <option value="left-standing"></option>
-                <option value="center-standing"></option>
-                <option value="right-standing"></option>
+            <optgroup label="One Standing, One Grounded">
+                <option value="one-standing-disconnected">Disconnected</option>
+                <option value="one-standing-inside-hooks">Inside hooks</option>
+                <option value="one-standing-slx">Single leg x</option>
             </optgroup>
-            <optgroup label="Both Down">
-                <option value="left-down"></option>
-                <option value="center-down"></option>
-                <option value="right-down"></option>
+            <optgroup label="Both Grounded">
+                <option value="left-down">Sitting mount</option>
+                <option value="center-down">Chest to chest mount</option>
+                <option value="right-down">Side control</option>
             </optgroup>
             <optgroup label="Enter Custom">
                 <option value="custom">Custom</option>
