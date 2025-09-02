@@ -1,0 +1,97 @@
+{{ $dataFile := printf "data/%s.toml" (.Get 0) }}
+{{ $data := readFile $dataFile }}
+{{ $allowedFilters := slice }}
+{{ if len .Params | eq 2 }}
+  {{ $allowedFilters = split (.Get 1) "," }}
+{{ end }}
+
+<!-- <div class="filter-interface w-full"> -->
+  <!-- <div class="flex gap-8"> -->
+    <!-- Left sidebar with filters -->
+    <div class="w-64 flex-none">
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold mb-4">Filter Options</h2>
+        <div id="filter-groups" class="space-y-6"
+          data-allowed-filters="{{ if $allowedFilters }}{{ delimit $allowedFilters "," }}{{ end }}">
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content area -->
+    <div class="flex-1">
+      <!-- <div class="flex justify-between items-center mb-6"> -->
+        <span id="items-count" class="text-sm"></span>
+        <!-- <div class="flex items-center gap-2">
+          <span class="text-sm">Sort by:</span>
+          <select id="sort-select" class="border rounded px-3 py-1">
+            <option value="name">Name</option>
+          </select>
+        </div>
+      </div> -->
+      <div id="items-grid" class="grid gap-4 grid-cols-1"></div>
+    </div>
+  <!-- </div> -->
+<!-- </div> -->
+
+<style>
+/* Previous styles remain the same */
+.filter-group {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1rem;
+}
+
+.filter-group h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-top: 0.25rem;
+}
+
+.item-card {
+  border: 1px solid #e5e5e5;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.item-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.item-card p {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+#items-count {
+  color: #666;
+}
+
+#sort-select {
+  background-color: white;
+  border-color: #e5e5e5;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterData = {{ $data }};
+  
+  const filterScript = document.createElement('script');
+  filterScript.src = '/js/filter.js';
+  filterScript.onload = () => initializeFilter(filterData);
+  document.head.appendChild(filterScript);
+});
+</script>
