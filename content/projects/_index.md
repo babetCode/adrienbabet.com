@@ -1,5 +1,5 @@
 ---
-title: 'Posts'
+title: 'Content'
 cascade:
     type: blog
 ---
