@@ -1,7 +1,7 @@
 ---
 date: '2025-08-01T21:15:24-06:00'
 draft: false
-title: 'Websat'
+title: 'WebSAT - REU'
 tags:
   - Programming
 ---

@@ -10,15 +10,15 @@ toc: false
   </div>
 </div>
 
-## About
-I’m currently studying Kinesiology at Montana State University in Bozeman MT. Here, I’ve worked as an assistant in the Anatomy & Physiology cadaver lab, and conducted research in the Neuromuscular Biomechanics Laboratory. Outside of the classroom, I am vice-president of the Montana State University Nogi Jiu-Jitsu Club and work as a snowboard instructor during the winter. Whenever I can, I love coding in python and learning new sports. This website is intended as a learning tool for myself as well as to share my projects with others.
-
 ## Featured Content
 
 {{< cards cols="2" >}}
   {{< card link="/projects/websat/" title="WebSAT" image="/images/of-me/wfu-bme/AdrienBabet1.jpg" subtitle="In the summer of 2025, I worked with Wake Forest University School of Medicine Center for Injury Biomechanics under Dr. Scott Gayzik and in collaboration with Elemance on a novel web based signal analysis tool for vehicle safety testing." >}}
   {{< card link="/projects/kalman/" title="Kalman Filtering" image="images/imu-bryan.jpeg" subtitle="IMU's are an increasingly popular way to gather movement data as wearable technology improves. However, the accelerometers and gyroscopes within them are noisy, making signal filters necessary to decrease error." method="Fill" options="3060x2040" >}}
 {{< /cards >}}
+
+## About
+I’m currently studying Kinesiology at Montana State University in Bozeman MT. Here, I’ve worked as an assistant in the Anatomy & Physiology cadaver lab, and conducted research in the Neuromuscular Biomechanics Laboratory. Outside of the classroom, I am vice-president of the Montana State University Nogi Jiu-Jitsu Club and work as a snowboard instructor during the winter. Whenever I can, I love coding in python and learning new sports. This website is intended as a learning tool for myself as well as to share my projects with others.
 
 ## More
 
