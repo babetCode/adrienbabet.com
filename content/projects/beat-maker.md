@@ -6,7 +6,9 @@ tags:
   - Miscellaneous
 ---
 
-Make sick beats and get groovin'
+4 bar loop beatmaker in JavaScript.<br><br>
+
+<!--more-->
 
 {{< rawhtml >}}
 <div id="beat-maker">
